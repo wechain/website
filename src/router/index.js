@@ -1,9 +1,10 @@
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import About from '@/components/About'
-import Join from '@/components/Join'
+import Upcoming from '@/components/Upcoming'
 import Sponsor from '@/components/Sponsor'
 import Credits from '@/components/Credits'
+import NotFoundComponent from '@/components/NotFoundComponent'
 
 export default new Router({
   routes: [
@@ -18,9 +19,9 @@ export default new Router({
         component: About
     },
     {
-        path: '/join',
-        name: 'join',
-        component: Join
+        path: '/upcoming',
+        name: 'upcoming',
+        component: Upcoming
     },
     {
         path: '/sponsor',
@@ -31,7 +32,11 @@ export default new Router({
         path: '/credits',
         name: 'credits',
         component: Credits
+    },
+    {   path: '*', 
+        component: NotFoundComponent 
     }
   ],
   mode: 'history'
+  
 })

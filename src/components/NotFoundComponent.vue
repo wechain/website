@@ -1,25 +1,4 @@
 <template>
-  <b-form>
-  	  <b-container fluid>
-          <b-row align-h="start">
-              <b-col md="6" offset-md="3">
-                <div class="card">   
-                  <img src="../assets/pretty-fox.jpg" class="card-img-top"/>
-                    <div class="card-body">
-                      <h4 class="title">Request a Vue Vixens Workshop for your Conference, Meetup, Group or Event</h4>
-                        <vue-form-generator class="form card" :schema="schema" :options="formOptions"></vue-form-generator>
-                        <div style="padding-top:10px">
-                          <b-button size="lg" variant="success">Submit</b-button>
-                        </div>
-                    </div>
-                </div>
-              </b-col>
-          </b-row>
-  	  </b-container>   
-  </b-form>
-</template>
-
-<!--<template>
     <b-container fluid>
           <b-row>
               <b-col md="6" offset-md="3">
@@ -28,14 +7,14 @@
                     <div class="card-body">
                       <h4 class="title">Hey!</h4>
                       <p class="card-text">
-                    Looking for something? It's not quite ready yet, but come back soon!
+                       Looks like you find this page by error. Please go back.
                       </p>
                     </div>
                 </article>
               </b-col>             
           </b-row>
       </b-container>
-</template>-->
+</template>
 <script>
 import VueFormGenerator from 'vue-form-generator'
 export default {
@@ -45,6 +24,14 @@ export default {
   },
   data () {
     return {
+      model: {
+        id: 1,
+        password: 'J0hnD03!x4',
+        skills: ['Javascript', 'VueJS'],
+        email: 'john.doe@gmail.com',
+        status: true
+      },
+
       schema: {
         fields: [
           {
@@ -68,7 +55,7 @@ export default {
             inputType: 'text',
             label: 'Event Name',
             model: 'event-name',
-            maxlength: 100,
+            maxlength: 50,
             required: true
           },
           {
@@ -76,14 +63,6 @@ export default {
             inputType: 'text',
             label: 'Event Location',
             model: 'event-location',
-            maxlength: 50,
-            required: true
-          },
-          {
-            type: 'input',
-            inputType: 'text',
-            label: 'Event Date',
-            model: 'event-date',
             maxlength: 50,
             required: true
           },
@@ -108,13 +87,3 @@ export default {
   methods: {}
 }
 </script>
-
-<style>
-.form-group.required>label:after {
-    content: "*";
-    font-weight: 400;
-    color: red;
-    padding-left: .2em;
-    font-size: 1em;
-}
-</style>

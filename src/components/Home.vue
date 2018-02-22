@@ -16,7 +16,7 @@
                       <p class="card-text">
                         Want to learn Vue.js? Join a Vue Vixen Skulk for free!
                       </p>
-                      <b-button :to="{ name: 'join'}" size="lg" variant="success">Go</b-button>
+                      <b-button :to="{ name: 'upcoming'}" size="lg" variant="success">Go</b-button>
                     </div>
                 </article>
               </b-col>
@@ -40,7 +40,7 @@
                       <p class="card-text">
                         We might be at a conference near you!
                       </p>
-                      <b-button :to="{ name: 'about'}" size="lg" variant="success">Go</b-button>
+                      <b-button :to="{ name: 'upcoming'}" size="lg" variant="success">Go</b-button>
                     </div>
                 </article>
               </b-col>
