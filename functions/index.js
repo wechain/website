@@ -15,7 +15,7 @@ const APP_NAME = 'vue-vixens';
 exports.requestSkulk = functions.database.ref('/requests')
   .onWrite(event => {
       const data = event.data.val();
-      return notifyOfRequest(data);
+      return requestSkulk(data);
 });
 
 function requestSkulk(data) {
