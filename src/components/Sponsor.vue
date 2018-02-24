@@ -127,7 +127,7 @@ export default {
           this.model.eventDate = '',
           this.model.Email = ''
         }).then(() => {
-          this.message = ''
+          //this.message = ''
         })
 
         //todo send message back and clear form
