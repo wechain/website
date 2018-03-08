@@ -8,7 +8,17 @@
             </b-col>
           </b-row>
           <b-row>
-              <b-col md="3">
+            <b-col class="article spotlight">
+              <h2><b>Upcoming Events</b></h2>
+              <b-row>
+                <b-col><b-button variant="link lg" :to="{ name: 'vueus2018'}">March 27, VueConf.Us</b-button></h3></b-col>
+                <b-col><b-button variant="link lg" :to="{ name: 'werise2018'}">June 22, WeRise.Tech</b-button></b-col>
+                <b-col><b-button variant="link lg" :to="{ name: 'connecttech2018'}">September 22, Connect.Tech</b-button></b-col>
+            </b-row>
+            </b-col>
+          </b-row>
+          <b-row>
+              <b-col md="4">
                 <article class="card">
                     <img src="../assets/fox.jpg" class="card-img-top"/>
                     <div class="card-body">
@@ -20,7 +30,7 @@
                     </div>
                 </article>
               </b-col>
-              <b-col md="3">
+              <b-col md="4">
                 <article class="card">
                     <img src="../assets/one-student.jpg" class="card-img-top"/>
                     <div class="card-body">
@@ -32,19 +42,7 @@
                     </div>
                 </article>
               </b-col>
-              <b-col md="3">
-                <article class="card">
-                    <img src="../assets/students-working.jpg" class="card-img-top"/>
-                    <div class="card-body">
-                      <h4 class="title">Upcoming Events</h4>
-                      <p class="card-text">
-                        We might be at a conference near you!
-                      </p>
-                      <b-button :to="{ name: 'upcoming'}" size="lg" variant="success">Go</b-button>
-                    </div>
-                </article>
-              </b-col>
-              <b-col md="3">
+              <b-col md="4">
                 <article class="card">
                     <img src="../assets/conference-crowd.jpg" class="card-img-top"/>
                     <div class="card-body">
@@ -89,7 +87,16 @@ html, body {
   flex: 1 0 auto;
   /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
 }
-
+.spotlight{
+  background-color: #47B784;
+  color: white;
+  padding: 10px;
+  margin: 10px 0px;
+}
+.btn-link {
+  font-size: 30px !important;
+  color: white !important;
+}
 .header,.footer {
   flex-shrink: 0;
   /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */

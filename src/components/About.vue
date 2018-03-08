@@ -1,7 +1,7 @@
 <template>
     <b-container fluid>
           <b-row>
-              <b-col md="6" offset-md="3">
+              <b-col md="8" offset-md="2">
                 <article class="card">
                   <img src="../assets/winter-fox.jpg" class="card-img-top"/>    
                     <div class="card-body">
@@ -17,13 +17,13 @@
                         leaders in the industry - our mentors are often speakers at the conference you attend.
                       </p>
                       <p align="left">
-                        If you're joining a Vue Vixens skulk as a mentor, firstly, thank you! Because of you, we can offer
+                        <b>A note to mentors</b>: if you're joining a Vue Vixens skulk as a mentor, firstly, thank you! Because of you, we can offer
                         free workshops to new developers in a supportive environment. Your job is to stay with your mentees throughout
                         the day, helping them over any difficulties and giving them a view of the life of a seasoned professional 
                         developer. You're the best!
                       </p>
                       <p align="left">
-                        Unsure if you will fit into a Vue Vixens skulk? If you are a new Vue.js developer who uses the pronouns "she" or "they", you
+                        <b>A note to students</b>: unsure if you will fit into a Vue Vixens skulk? If you are a new Vue.js developer who uses the pronouns "she" or "they", you
                         are welcome. We hate to leave anyone out, but this group is for women, and those who identify as such. We are trans-friendly. 
                         The founder of Vue Vixens, Jen Looper, is a Wellesley College Alumna (class of '92) and takes the college's admission criteria 
                         as a blueprint. To paraphrase their statement of admissibility:

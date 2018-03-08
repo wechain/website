@@ -1,7 +1,7 @@
 <template>
     <b-container fluid>
           <b-row>
-              <b-col md="6" offset-md="3">
+              <b-col md="8" offset-md="2">
                 <article class="card">
                   <img src="../assets/skulk.png" class="card-img-top"/>
                                         
@@ -19,6 +19,10 @@
                         </li>
                         <li class="list-item">🦊 <a href="https://werise.tech/">We Rise Conference</a> - Atlanta - June 21-22, 2018<br/>
                         We are hosting a full-day workshop for web and mobile development with Vue.js. Free to all who attend!
+                          
+                        </li>
+                        <li class="list-item">🦊 <a href="https://connect.tech/">Connect.Tech</a> - Atlanta - September 20-22, 2018<br/>
+                        We will host a full-day workshop for web and mobile development with Vue.js. 10 spaces available!
                           
                         </li>
                       </ul>

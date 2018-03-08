@@ -10,7 +10,7 @@
           <b-navbar-nav>
             <b-nav-item :to="{ name: 'about'}">About</b-nav-item>
             <b-nav-item :to="{ name: 'upcoming'}">Upcoming Events</b-nav-item>
-            <b-nav-item :to="{ name: 'sponsor'}">Sponsor</b-nav-item>
+            <b-nav-item :to="{ name: 'sponsor'}">Request a Skulk</b-nav-item>
           </b-navbar-nav>
 
         </b-collapse>

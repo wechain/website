@@ -15,3 +15,13 @@
     name: 'app'
   }
 </script>
+
+<style>
+.form-group.required>label:after {
+    content: "*";
+    font-weight: 400;
+    color: red;
+    padding-left: .2em;
+    font-size: 1em;
+}
+</style>
