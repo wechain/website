@@ -14,6 +14,9 @@
                       <p align="center">
                          <b-button size="lg" variant="success">Call for Mentors</b-button>
                       </p>
+                      
+                         <h4 align="center" class="title">Student Registration</h4>
+                      
                       <b-alert v-if="message" show variant="success">{{message}}</b-alert>                      
                       <form v-on:submit.prevent="sendRequest">
                         <vue-form-generator class="form card" :model="model" :schema="schema" :options="formOptions"></vue-form-generator>

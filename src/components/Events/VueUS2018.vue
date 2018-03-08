@@ -15,6 +15,9 @@
                         in a fun discussion, mini-workshop, and get some swag! If you'd 
                         like to attend the breakfast, please register below.
                       </p>
+                      
+                      <h4 align="center" class="title">Attendee Registration</h4>
+                      
                       <b-alert v-if="message" show variant="success">{{message}}</b-alert>                      
                       <form v-on:submit.prevent="sendRequest">
                         <vue-form-generator class="form card" :model="model" :schema="schema" :options="formOptions"></vue-form-generator>
