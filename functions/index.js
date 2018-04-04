@@ -30,3 +30,25 @@ function requestSkulk(data) {
   });
 }
 
+//notify of registrants
+
+exports.registerForSkulk = functions.database.ref('/registration')
+  .onWrite(event => {
+      const data = event.data.val();
+      return registerForSkulk(data);
+});
+
+function registerForSkulk(data) {
+  const mailOptions = {
+    from: '"Vue Vixens Web" <noreply@vue-vixens.firebaseapp.com>',
+    to: 'jen.looper@progress.com'
+  };
+  mailOptions.subject = `New Vue Vixens registration!`;
+  mailOptions.text = `A registration just came through `+JSON.stringify(data);
+  return mailTransport.sendMail(mailOptions).then(() => {
+    console.log('Alert email sent');
+  });
+}
+
+
+
