@@ -11,6 +11,7 @@
             <b-col class="article spotlight">
               <h2><b>Upcoming Events</b></h2>
               <b-row>
+                <b-col><b-button variant="link lg" :to="{ name: 'progressnext2018'}">May 31, ProgressNext</b-button></b-col>
                 <b-col><b-button variant="link lg" :to="{ name: 'werise2018'}">June 22, WeRise.Tech</b-button></b-col>
                 <b-col><b-button variant="link lg" :to="{ name: 'connecttech2018'}">September 22, Connect.Tech</b-button></b-col>
             </b-row>

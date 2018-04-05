@@ -10,7 +10,7 @@ import NotFoundComponent from '@/components/NotFoundComponent'
 import WeRise2018 from '@/components/Events/WeRise2018'
 import VueUS2018 from '@/components/Events/VueUS2018'
 import ConnectTech2018 from '@/components/Events/ConnectTech2018'
-
+import ProgressNext2018 from '@/components/Events/ProgressNext2018'
 
 export default new Router({
   routes: [
@@ -53,6 +53,11 @@ export default new Router({
         path: '/ConnectTech2018',
         name: 'connecttech2018',
         component: ConnectTech2018
+    },
+    {
+        path: '/ProgressNext2018',
+        name: 'progressnext2018',
+        component: ProgressNext2018
     },
     {   path: '*', 
         component: NotFoundComponent 
