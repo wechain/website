@@ -4,65 +4,49 @@ import About from '@/components/About'
 import Upcoming from '@/components/Upcoming'
 import Sponsor from '@/components/Sponsor'
 import Credits from '@/components/Credits'
+import Event from '@/components/Events/EventTemplate'
 import NotFoundComponent from '@/components/NotFoundComponent'
-
-//events
-import WeRise2018 from '@/components/Events/WeRise2018'
-import VueUS2018 from '@/components/Events/VueUS2018'
-import ConnectTech2018 from '@/components/Events/ConnectTech2018'
-import ProgressNext2018 from '@/components/Events/ProgressNext2018'
 
 export default new Router({
   routes: [
     {
-        path: '/',
-        name: 'home',
-        component: Home
+      path: '/',
+      name: 'home',
+      component: Home
     },
     {
-        path: '/about',
-        name: 'about',
-        component: About
+      path: '/about',
+      name: 'about',
+      component: About
     },
     {
-        path: '/upcoming',
-        name: 'upcoming',
-        component: Upcoming
+      path: '/upcoming',
+      name: 'upcoming',
+      component: Upcoming
     },
     {
-        path: '/sponsor',
-        name: 'sponsor',
-        component: Sponsor
+      path: '/sponsor',
+      name: 'sponsor',
+      component: Sponsor
     },
     {
-        path: '/credits',
-        name: 'credits',
-        component: Credits
+      path: '/credits',
+      name: 'credits',
+      component: Credits
     },
     {
-        path: '/WeRise2018',
-        name: 'werise2018',
-        component: WeRise2018
+      path: '/events/:event',
+      component: Event,
     },
     {
-        path: '/VueUS2018',
-        name: 'vueus2018',
-        component: VueUS2018
+      path: '/home',
+      redirect: '/'
     },
     {
-        path: '/ConnectTech2018',
-        name: 'connecttech2018',
-        component: ConnectTech2018
+      path: '*',
+      component: NotFoundComponent
     },
-    {
-        path: '/ProgressNext2018',
-        name: 'progressnext2018',
-        component: ProgressNext2018
-    },
-    {   path: '*', 
-        component: NotFoundComponent 
-    }
   ],
   mode: 'history'
-  
+
 })
