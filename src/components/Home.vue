@@ -10,7 +10,7 @@
     <b-row>
       <b-col class="article spotlight">
         <h2><b>Upcoming Events</b></h2>
-        <b-row>
+        <b-row v-if="!!story.content && !!story.content.body[0]">
           <b-col v-for="item in story.content.body[0].columns" :key="item.name">
             <b-button variant="link lg" :to="item.url.cached_url">{{item.name}}</b-button>
           </b-col>
@@ -117,6 +117,10 @@ export default {
     /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
   }
 
+  .row {
+    max-width: calc(100% + 25px);
+  }
+
   .spotlight {
     background-color: #47B784;
     color: white;
@@ -141,10 +145,6 @@ export default {
 
   .form {
     padding: 10px;
-  }
-
-  h1, h2 {
-    font-weight: normal;
   }
 
   ul {
