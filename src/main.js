@@ -8,10 +8,12 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueFire from 'vuefire'
+import StoryblokVue from 'storyblok-vue'
 
 Vue.use(VueFire)
 Vue.use(BootstrapVue)
 Vue.use(VueRouter)
+Vue.use(StoryblokVue)
 
 Vue.config.productionTip = false
 
