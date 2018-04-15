@@ -13,7 +13,7 @@
       <b-col class="article spotlight">
         <h2><b>Upcoming Events</b></h2>
         <transition name="fade" appear>
-          <b-row v-if="!!story.content && !!story.content.body[0]">
+          <b-row v-if="!!story.content && !!story.content.body">
             <b-col v-for="item in story.content.body[0].columns" :key="item.name">
               <b-button variant="link lg"
                         v-editable="item"
@@ -62,44 +62,16 @@
 </template>
 
 <script>
+  import storybook from '../mixins/storyblok'
   export default {
+    mixins: [storybook],
     data() {
       return {
         msg: 'Welcome to Vue Vixens!',
         tagline: 'Vue Vixens are foxy people who identify as women and who want to learn Vue.js to make websites and mobile apps',
-        story: {}
+        slug: 'home',
       }
     },
-    created: function () {
-      this.$storyblok.on('change', () => {
-        this.loadStory('draft')
-      });
-      this.$storyblok.on('published', () => {
-        this.loadStory('draft')
-      });
-      this.loadStory('draft');
-
-      this.$storyblok.pingEditor(() => {
-        this.loadStory(this.$storyblok.inEditor ? 'draft' : 'published')
-      })
-    },
-    methods: {
-      loadStory(version) {
-        this.$storyblok.get({
-          slug: 'home',
-          version: version
-        }, (data) => {
-          this.story = {
-            content: {
-              body: []
-            }
-          };
-          this.$nextTick(() => {
-            this.story = data.story
-          });
-        })
-      }
-    }
   }
 </script>
 

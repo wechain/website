@@ -1,6 +1,5 @@
 <template>
-  <transition name="fade" appear>
-    <b-form>
+    <b-form v-if="!loading">
       <b-container fluid v-if="!!currentEvent">
         <b-row align-h="start">
           <b-col md="8" offset-md="2">
@@ -16,7 +15,7 @@
                   </p>
                   <p v-if="currentEvent.date">
                     <i class="far fa-calendar-alt"></i>
-                    {{currentEvent.date| moment("MMM Do, YYYY")}}
+                    {{currentEvent.date| moment('MMM Do, YYYY')}}
                   </p>
                   <p v-if="currentEvent.location">
                     <i class="fas fa-map-marker-alt"></i>
@@ -42,54 +41,24 @@
       </b-container>
       <not-found v-else></not-found>
     </b-form>
-  </transition>
 </template>
 
 <script>
 import NotFound from './NotFoundComponent'
+import storybook from '../mixins/storyblok'
 export default {
   components: {
     NotFound
   },
-  data() {
-    return {
-      story: {},
-      loading: false,
-    }
-  },
+  mixins: [storybook],
   computed: {
     currentEvent() {
       return this.story.content
+    },
+    slug() {
+      return `events/${this.$route.params.event}`;
     }
   },
-  created: function() {
-    this.$storyblok.on('change', () => { this.loadStory('draft') });
-    this.$storyblok.on('published', () => { this.loadStory('draft') });
-    this.loadStory('draft');
-
-    this.$storyblok.pingEditor(() => {
-      this.loadStory(this.$storyblok.inEditor ? 'draft' : 'published')
-    })
-  },
-  methods: {
-    loadStory(version) {
-      this.loading = true;
-      this.$storyblok.get({
-        slug: `events/${this.$route.params.event}`,
-        version: version
-      }, (data) => {
-        this.story = {
-          content: {}
-        };
-        this.$nextTick(() => {
-          this.story = data.story;
-          this.loading = false;
-        });
-      }, (error) => {
-        this.loading = false;
-      });
-    }
-  }
 }
 </script>
 
