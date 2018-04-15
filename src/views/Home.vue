@@ -15,7 +15,9 @@
         <transition name="fade" appear>
           <b-row v-if="!!story.content && !!story.content.body[0]">
             <b-col v-for="item in story.content.body[0].columns" :key="item.name">
-              <b-button variant="link lg" :to="item.url.cached_url">{{item.name}}</b-button>
+              <b-button variant="link lg"
+                        v-editable="item"
+                        :to="item.url.cached_url">{{item.name}}</b-button>
             </b-col>
           </b-row>
         </transition>
