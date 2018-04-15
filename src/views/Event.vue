@@ -1,34 +1,36 @@
 <template>
-  <b-form v-if="!loading">
-    <b-container fluid v-if="!!currentEvent">
-      <b-row align-h="start">
-        <b-col md="8" offset-md="2">
-          <div class="card">
-            <img :src="currentEvent.image" class="card-img-top"/>
-            <div class="card-body">
-              <h4 class="title"><p align="center">{{currentEvent.title}}</p></h4>
-              <p>
-                {{currentEvent.content}}
-              </p>
-              <p align="center">
-                <template v-for="action in currentEvent.actions">
-                  <b-button size="lg" variant="success" :key="action.text"
-                            :href="action.url.url">
-                    {{action.text}}
-                  </b-button>
-                </template>
-              </p>
+  <transition name="fade" appear>
+    <b-form v-if="!loading">
+      <b-container fluid v-if="!!currentEvent">
+        <b-row align-h="start">
+          <b-col md="8" offset-md="2">
+            <div class="card">
+              <img :src="currentEvent.image" class="card-img-top"/>
+              <div class="card-body">
+                <h4 class="title"><p align="center">{{currentEvent.title}}</p></h4>
+                <p>
+                  {{currentEvent.content}}
+                </p>
+                <p align="center">
+                  <template v-for="action in currentEvent.actions">
+                    <b-button size="lg" variant="success" :key="action.text"
+                              :href="action.url.url">
+                      {{action.text}}
+                    </b-button>
+                  </template>
+                </p>
+              </div>
             </div>
-          </div>
-        </b-col>
-      </b-row>
-    </b-container>
-    <not-found v-else></not-found>
-  </b-form>
+          </b-col>
+        </b-row>
+      </b-container>
+      <not-found v-else></not-found>
+    </b-form>
+  </transition>
 </template>
 
 <script>
-import NotFound from '../NotFoundComponent'
+import NotFound from './NotFoundComponent'
 export default {
   components: {
     NotFound
@@ -81,5 +83,6 @@ export default {
   }
   .btn {
     margin-right: 10px;
+    margin-bottom: 10px;
   }
 </style>
