@@ -4,6 +4,7 @@ import About from '@/components/About'
 import Upcoming from '@/components/Upcoming'
 import Sponsor from '@/components/Sponsor'
 import Credits from '@/components/Credits'
+import Partners from '@/components/Partners'
 import Event from '@/components/Events/EventTemplate'
 import NotFoundComponent from '@/components/NotFoundComponent'
 
@@ -33,6 +34,11 @@ export default new Router({
       path: '/credits',
       name: 'credits',
       component: Credits
+    },
+    {
+      path: '/partners',
+      name: 'partners',
+      component: Partners
     },
     {
       path: '/events/:event',
