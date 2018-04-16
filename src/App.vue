@@ -15,7 +15,7 @@ export default {
   name: 'app',
   created() {
     this.$storyblok.init({
-      accessToken: 'plc0fBh2no8owEeTALSN2wtt'
+      accessToken: 'fjDrPjQqBuBfO2GzzbzHvQtt'
     });
   }
 }
