@@ -54,7 +54,9 @@
       -o-filter: brightness(0.4);
       filter: brightness(0.4);
       z-index: 1;
-      &:hover {
+    }
+    &:hover {
+      .event-item-background {
         -webkit-filter: brightness(0.7);
         -moz-filter: brightness(0.7);
         -o-filter: brightness(0.7);
