@@ -14,7 +14,7 @@
               <b-button class="toggle-button" size="lg" variant="success" @click="showGrid = !showGrid">
                 {{showGrid ? 'Show calendar' : 'Show grid'}}
               </b-button>
-              <transition name="fade" mode="out-in">
+              <transition name="fade" mode="out-in" appear>
                 <b-row v-if="showGrid" key="grid">
                   <b-col lg="4" md="6" sm="6" cols="12"
                          v-for="event in story.content.body"
