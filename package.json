@@ -19,6 +19,7 @@
     "vue-form-generator": "^2.2.1",
     "vue-moment": "^3.2.0",
     "vue-router": "^3.0.1",
+    "vue-simple-calendar": "^2.2.0",
     "vuefire": "^1.4.5"
   },
   "devDependencies": {
