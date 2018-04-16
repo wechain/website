@@ -17,12 +17,12 @@
                                 meet amazing Progress women!
                             </li>
                             <li class="list-item">🦊 <a href="https://werise.tech/">We Rise Conference</a> - Atlanta -
-                                June 21-22, 2018<br/>
+                                Atlanta - June 21-22, 2018<br/>
                                 We are hosting a full-day workshop for web and mobile development with Vue.js. Free to
                                 all who attend!
                             </li>
                             <li class="list-item">🦊 <a href="https://connect.tech/">Connect.Tech</a> - Atlanta -
-                                September 20-22, 2018<br/>
+                                Atlanta - October 17-19, 2018<br/>
                                 We will host a full-day workshop for web and mobile development with Vue.js. 10 spaces
                                 available!
                             </li>
