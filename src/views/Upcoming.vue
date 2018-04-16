@@ -15,22 +15,8 @@
                 {{showGrid ? 'Show calendar' : 'Show grid'}}
               </b-button>
               <transition name="fade" mode="out-in" appear>
-                <b-row v-if="showGrid" key="grid">
-                  <b-col lg="4" md="6" sm="6" cols="12"
-                         v-for="event in story.content.body"
-                         :key="event.name">
-                    <router-link tag="figure" :to="event.link.cached_url" v-editable="event"
-                                 class="event-item d-flex justify-content-center align-items-center">
-                      <div class="event-item-background"
-                           :style="{backgroundImage: `url(${event.img})`}"></div>
-                      <figcaption>
-                        <h5>{{event.location}}</h5>
-                        <p>{{event.date | moment('MMM Do')}}</p>
-                      </figcaption>
-                    </router-link>
-                  </b-col>
-                </b-row>
-                <div class="calendar" v-else key="calendar">
+                <vv-grid v-if="showGrid" :events="story.content.body"></vv-grid>
+                <div class="calendar" v-else>
                   <calendar-view :show-date="showDate"
                                  :events="events"
                                  @show-date-change="setShowDate"
@@ -49,12 +35,13 @@
   import storyblok from '../mixins/storyblok'
   import CalendarView from 'vue-simple-calendar'
   import 'vue-simple-calendar/dist/static/css/default.css';
-  import 'vue-simple-calendar/dist/static/css/holidays-us.css';
+  import VvGrid from '../components/Grid'
 
   export default {
     mixins: [storyblok],
     components: {
-      CalendarView
+      CalendarView,
+      VvGrid,
     },
     data() {
       return {
@@ -93,43 +80,6 @@
   }
   .toggle-button {
     margin-bottom: 20px;
-  }
-  .event-item {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    background-color: lightgray;
-    color: #fff;
-    text-align: center;
-    cursor: pointer;
-    figcaption {
-      z-index: 2;
-      h5 {
-        font-size: 24px;
-      }
-      p {
-        font-size: 20px;
-      }
-    }
-    .event-item-background {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-size: cover;
-      -webkit-filter: brightness(0.4);
-      -moz-filter: brightness(0.4);
-      -o-filter: brightness(0.4);
-      filter: brightness(0.4);
-      z-index: 1;
-      &:hover {
-        -webkit-filter: brightness(0.7);
-        -moz-filter: brightness(0.7);
-        -o-filter: brightness(0.7);
-        filter: brightness(0.7);
-      }
-    }
   }
 
   .calendar {

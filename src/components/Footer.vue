@@ -5,7 +5,7 @@
         <b-collapse is-nav class="justify-content-between" id="bd-main-nav">
 
             <b-navbar-nav>
-                <b-nav-item href="http://progress.com" target="_blank">A Project by Progress Developer Relations
+                <b-nav-item href="http://progress.com" target="_blank">A Project supported by Progress
                 </b-nav-item>
                 <b-nav-item to="/credits" exact>Credits</b-nav-item>
             </b-navbar-nav>

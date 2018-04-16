@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import NotFound from './NotFoundComponent'
+import  NotFound from './NotFoundComponent'
 import storybook from '../mixins/storyblok'
 export default {
   components: {
