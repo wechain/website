@@ -78,6 +78,10 @@
   .conference {
     background-color: #b5e2cd!important;
     cursor: pointer;
+    &:hover {
+      background-color: #47B784!important;
+      color: #fff!important;
+    }
   }
   .toggle-button {
     margin-bottom: 20px;
