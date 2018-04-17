@@ -1,12 +1,12 @@
 import Router from 'vue-router'
-import Home from '@/components/Home'
-import About from '@/components/About'
-import Upcoming from '@/components/Upcoming'
-import Sponsor from '@/components/Sponsor'
-import Credits from '@/components/Credits'
-import Partners from '@/components/Partners'
-import Event from '@/components/Events/EventTemplate'
-import NotFoundComponent from '@/components/NotFoundComponent'
+import Home from '@/views/Home'
+import About from '@/views/About'
+import Upcoming from '@/views/Upcoming'
+import Sponsor from '@/views/Sponsor'
+import Credits from '@/views/Credits'
+import Partners from '@/views/Partners'
+import Event from '@/views/Event'
+import NotFoundComponent from '@/views/NotFoundComponent'
 
 export default new Router({
   routes: [
@@ -53,6 +53,12 @@ export default new Router({
       component: NotFoundComponent
     },
   ],
-  mode: 'history'
-
-})
+  mode: 'history',
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  }
+});
