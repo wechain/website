@@ -12,7 +12,6 @@ export default {
     this.$storyblok.on('published', () => {
       this.loadStory('draft')
     });
-    this.loadStory('draft');
 
     this.$storyblok.pingEditor(() => {
       this.loadStory(this.$storyblok.inEditor ? 'draft' : 'published')

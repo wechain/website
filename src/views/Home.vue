@@ -62,9 +62,9 @@
 </template>
 
 <script>
-  import storybook from '../mixins/storyblok'
+  import storyblok from '../mixins/storyblok'
   export default {
-    mixins: [storybook],
+    mixins: [storyblok],
     data() {
       return {
         msg: 'Welcome to Vue Vixens!',
