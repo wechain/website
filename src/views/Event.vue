@@ -45,12 +45,12 @@
 
 <script>
 import  NotFound from './NotFoundComponent'
-import storybook from '../mixins/storyblok'
+import storyblok from '../mixins/storyblok'
 export default {
   components: {
     NotFound
   },
-  mixins: [storybook],
+  mixins: [storyblok],
   computed: {
     currentEvent() {
       return this.story.content

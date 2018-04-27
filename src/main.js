@@ -7,7 +7,6 @@ import VueMoment from 'vue-moment'
 import VueCalendar from 'vue-simple-calendar'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import "./registerServiceWorker";
 import router from './router'
 
 Vue.use(BootstrapVue);
