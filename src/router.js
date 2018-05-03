@@ -2,9 +2,10 @@ import Router from 'vue-router'
 import Home from '@/views/Home'
 import About from '@/views/About'
 import Upcoming from '@/views/Upcoming'
-import Sponsor from '@/views/Sponsor'
 import Credits from '@/views/Credits'
-import Partners from '@/views/Partners'
+import Sponsors from '@/views/Sponsors'
+import Request from '@/views/Request'
+import Team from '@/views/Team'
 import Event from '@/views/Event'
 import NotFoundComponent from '@/views/NotFoundComponent'
 
@@ -26,9 +27,9 @@ export default new Router({
       component: Upcoming
     },
     {
-      path: '/sponsor',
-      name: 'sponsor',
-      component: Sponsor
+      path: '/request',
+      name: 'request',
+      component: Request
     },
     {
       path: '/credits',
@@ -36,9 +37,14 @@ export default new Router({
       component: Credits
     },
     {
-      path: '/partners',
-      name: 'partners',
-      component: Partners
+      path: '/team',
+      name: 'team',
+      component: Team
+    },
+    {
+      path: '/sponsors',
+      name: 'sponsors',
+      component: Sponsors
     },
     {
       path: '/events/:event',

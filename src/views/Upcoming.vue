@@ -3,7 +3,6 @@
     <b-row>
       <b-col md="8" offset-md="2">
         <article class="card upcoming-card">
-          <img src="../assets/skulk.jpg" class="card-img-top"/>
           <div class="card-body">
             <h4 class="title">Upcoming Skulks</h4>
             <p class="card-text">

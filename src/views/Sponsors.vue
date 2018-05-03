@@ -2,22 +2,20 @@
   <b-container fluid>
     <b-row>
       <b-col md="8" offset-md="2">
-        <h4 class="title text-center">Partners</h4>
+        <h3 class="title text-center">Our Sponsors</h3>
+        <h4 class="title text-center">We are extremely grateful to our sponsors! Below is a list of 
+            our valued community sponsors who are supporting our project</h4>
         <b-row v-if="!!story.content && !!story.content.body">
-          <b-col md="6" v-for="partner in story.content.body"
-                 :key="partner.name">
-            <article class="card" v-editable="partner">
-              <img :src="partner.img"
+          <b-col md="6" v-for="sponsor in story.content.body"
+                 :key="sponsor.name">
+            <article class="card" v-editable="sponsor">
+              <img :src="sponsor.img"
                    class="card-img-top"/>
               <div class="card-body">
-                <h4 class="title">{{partner.name}}</h4>
+                <h4 class="title">{{sponsor.name}}</h4>
                 <p class="card-text">
-                  {{partner.bio}}
-                </p>
-                <p v-if="partner.twitter">
-                  <i class="fab fa-twitter"></i>
-                  <a v-bind:href="'http://www.twitter.com/' + partner.twitter">@{{partner.twitter}}</a>
-                </p>
+                  {{partner.description}}
+                </p>        
                 <p v-if="partner.website.url">
                   <i class="fas fa-link"></i>
                   <a :href="partner.website.url">{{partner.website.url}}</a>
@@ -38,7 +36,7 @@
     mixins: [storyblok],
     data() {
       return {
-        slug: 'partners',
+        slug: 'sponsors',
       }
     },
   }

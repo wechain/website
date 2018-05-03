@@ -10,8 +10,9 @@
           <b-navbar-nav>
             <b-nav-item :to="{ name: 'about'}">About</b-nav-item>
             <b-nav-item :to="{ name: 'upcoming'}">Upcoming Events</b-nav-item>
-            <b-nav-item :to="{ name: 'sponsor'}">Request a Skulk</b-nav-item>
-            <b-nav-item :to="{ name: 'partners'}">Partners</b-nav-item>
+            <b-nav-item :to="{ name: 'request'}">Request a Skulk</b-nav-item>
+            <b-nav-item :to="{ name: 'sponsors'}">Sponsors</b-nav-item>
+            <b-nav-item :to="{ name: 'team'}">Team</b-nav-item>
             <b-nav-item href="https://vuevixens.threadless.com/">Shop</b-nav-item>
           </b-navbar-nav>
 
