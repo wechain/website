@@ -14,11 +14,14 @@
               <div class="card-body">
                 <h4 class="title">{{sponsor.name}}</h4>
                 <p class="card-text">
-                  {{partner.description}}
+                  {{sponsor.tagline}}
+                </p> 
+                <p class="card-text">
+                  {{sponsor.description}}
                 </p>        
-                <p v-if="partner.website.url">
+                <p v-if="sponsor.website.url">
                   <i class="fas fa-link"></i>
-                  <a :href="partner.website.url">{{partner.website.url}}</a>
+                  <a :href="sponsor.website.url">{{sponsor.website.url}}</a>
                 </p>
               </div>
             </article>
