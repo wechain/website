@@ -7,6 +7,8 @@ import Sponsors from '@/views/Sponsors'
 import Request from '@/views/Request'
 import Team from '@/views/Team'
 import Event from '@/views/Event'
+import Gallery from '@/views/Gallery'
+import GalleryItem from '@/views/GalleryItem'
 import NotFoundComponent from '@/views/NotFoundComponent'
 
 export default new Router({
@@ -45,6 +47,16 @@ export default new Router({
       path: '/sponsors',
       name: 'sponsors',
       component: Sponsors
+    },
+    {
+      path: '/gallery',
+      name: 'gallery',
+      component: Gallery
+    },
+    {
+      path: '/galleries/:item',
+      name: 'galleryItem',
+      component: GalleryItem
     },
     {
       path: '/events/:event',
