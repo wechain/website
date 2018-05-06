@@ -75,108 +75,13 @@
   }
 </script>
 
-<style lang="scss">
-  html, body {
-    height: 100%;
-  }
-
-  .content {
-    flex: 1 0 auto;
-    /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  }
-
-  .row {
-    max-width: calc(100% + 25px);
-  }
+<style lang="scss" scoped>
 
   .spotlight {
     background-color: #47B784;
     color: white;
     padding: 10px;
     margin: 10px 0px;
-  }
-
-  .btn-link {
-    font-size: 28px !important;
-    color: #235b42 !important;
-    &:hover, &:focus, &:active {
-      text-decoration: none;
-      color: #fff !important;
-      text-shadow: 1px 1px 2px #235b42;
-    }
-  }
-
-  .card.darkened {
-    cursor: pointer;
-    img {
-      -webkit-filter: brightness(0.7);
-      -moz-filter: brightness(0.7);
-      -o-filter: brightness(0.7);
-      filter: brightness(0.7);
-    }
-    &:hover {
-      -webkit-box-shadow: 0 0 5px 0 rgba(50, 50, 50, 1);
-      -moz-box-shadow: 0 0 5px 0 rgba(50, 50, 50, 1);
-      box-shadow: 0 0 5px 0 rgba(50, 50, 50, 1);
-      border: 1px solid rgba(50, 50, 50, 0.6);
-      img {
-        -webkit-filter: brightness(1);
-        -moz-filter: brightness(1);
-        -o-filter: brightness(1);
-        filter: brightness(1);
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-    .btn-link {
-      font-size: 24px !important;
-      color: #fff !important;
-      &:hover, &:focus, &:active {
-        text-decoration: none;
-      }
-    }
-    .card.darkened {
-      cursor: pointer;
-      img {
-        -webkit-filter: brightness(1);
-        -moz-filter: brightness(1);
-        -o-filter: brightness(1);
-        filter: brightness(1);
-      }
-    }
-  }
-
-  .header, .footer {
-    flex-shrink: 0;
-    /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-    padding: 10px;
-  }
-
-  .container-fluid {
-    padding: 10px;
-  }
-
-  .form {
-    padding: 10px;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  a {
-    color: #42b983;
-  }
-
-  article, .article {
-    text-align: center;
   }
 
   .fade-scale-enter-active, .fade-scale-leave-active {
