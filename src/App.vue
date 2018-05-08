@@ -95,16 +95,6 @@
     text-align: center;
   }
 
-  .btn-link {
-    font-size: 28px !important;
-    color: #235b42 !important;
-    &:hover, &:focus, &:active {
-      text-decoration: none;
-      color: #fff !important;
-      text-shadow: 1px 1px 2px #235b42;
-    }
-  }
-
   .card.darkened {
     cursor: pointer;
     img {
@@ -128,13 +118,6 @@
   }
 
   @media (max-width: 768px) {
-    .btn-link {
-      font-size: 24px !important;
-      color: #fff !important;
-      &:hover, &:focus, &:active {
-        text-decoration: none;
-      }
-    }
     .card.darkened {
       cursor: pointer;
       img {
