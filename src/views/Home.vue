@@ -14,7 +14,7 @@
         <h2><b>Upcoming Events</b></h2>
         <transition name="fade" appear>
           <b-row v-if="!!story.content && !!story.content.body">
-            <b-col v-for="item in story.content.body[0].columns" :key="item.name">
+            <b-col md="3" xs="12" v-for="item in story.content.body[0].columns" :key="item.name">
               <b-button variant="link lg"
                         v-editable="item"
                         :to="item.url.cached_url">{{item.name}}</b-button>
@@ -47,7 +47,7 @@
         </router-link>
       </b-col>
       <b-col md="4">
-        <router-link tag="article" :to="{ name: 'sponsor'}" class="card darkened">
+        <router-link tag="article" :to="{ name: 'request'}" class="card darkened">
           <img src="../assets/conference-crowd.jpg" class="card-img-top"/>
           <div class="card-body">
             <h4 class="title">Request</h4>
@@ -91,5 +91,27 @@
   .fade-scale-enter, .fade-scale-leave-to {
     opacity: 0;
     transform: scale(0.7)
+  }
+
+  .btn-link {
+    font-size: 28px !important;
+    color: #235b42 !important;
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+      color: #fff !important;
+      text-shadow: 1px 1px 2px #235b42;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .btn-link {
+      font-size: 24px !important;
+      color: #fff !important;
+      white-space: normal;
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+        text-shadow: none;
+      }
+    }
   }
 </style>
