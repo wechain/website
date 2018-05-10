@@ -14,7 +14,7 @@
         <h2><b>Upcoming Events</b></h2>
         <transition name="fade" appear>
           <b-row v-if="!!story.content && !!story.content.body">
-            <b-col md="3" xs="12" v-for="item in story.content.body[0].columns" :key="item.name">
+            <b-col v-for="item in story.content.body[0].columns" :key="item.name">
               <b-button variant="link lg"
                         v-editable="item"
                         :to="item.url.cached_url">{{item.name}}</b-button>
