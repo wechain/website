@@ -17,6 +17,7 @@
     "storyblok-vue": "^1.0.4",
     "vue": "^2.5.13",
     "vue-form-generator": "^2.2.1",
+    "vue-i18n": "^7.7.0",
     "vue-moment": "^3.2.0",
     "vue-router": "^3.0.1",
     "vue-simple-calendar": "^2.2.0",
