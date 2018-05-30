@@ -22,6 +22,7 @@ export default {
       this.loading = true;
       this.$storyblok.get({
         slug: this.slug,
+        // slug: `${this.$i18n.locale}/${this.slug}`,
         version: version
       }, (data) => {
         this.story = {
