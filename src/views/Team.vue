@@ -17,11 +17,11 @@
                 </p>
                 <p v-if="partner.twitter">
                   <i class="fab fa-twitter"></i>
-                  <a v-bind:href="'http://www.twitter.com/' + partner.twitter">@{{partner.twitter}}</a>
+                  <a class="link-green" :href="'http://www.twitter.com/' + partner.twitter">@{{partner.twitter}}</a>
                 </p>
                 <p v-if="partner.website.url">
                   <i class="fas fa-link"></i>
-                  <a :href="partner.website.url">{{partner.website.url}}</a>
+                  <a class="link-green" :href="partner.website.url">{{partner.website.url}}</a>
                 </p>
               </div>
             </article>
@@ -43,11 +43,11 @@
                 </p>
                 <p v-if="partner.twitter">
                   <i class="fab fa-twitter"></i>
-                  <a v-bind:href="'http://www.twitter.com/' + partner.twitter">@{{partner.twitter}}</a>
+                  <a class="link-green" :href="'http://www.twitter.com/' + partner.twitter">@{{partner.twitter}}</a>
                 </p>
                 <p v-if="partner.website.url">
                   <i class="fas fa-link"></i>
-                  <a :href="partner.website.url">{{partner.website.url}}</a>
+                  <a class="link-green" :href="partner.website.url">{{partner.website.url}}</a>
                 </p>
               </div>
             </article>

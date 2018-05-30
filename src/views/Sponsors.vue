@@ -21,7 +21,7 @@
                 </p>        
                 <p v-if="sponsor.website.url">
                   <i class="fas fa-link"></i>
-                  <a :href="sponsor.website.url">{{sponsor.website.url}}</a>
+                  <a class="link-green" :href="sponsor.website.url">{{sponsor.website.url}}</a>
                 </p>
               </div>
             </article>

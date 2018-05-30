@@ -7,15 +7,15 @@
             <p align="center"><img src="../assets/logo.png"/></p>
             <h4 class="title">{{ $t("vixens.title") }}</h4>
             <i18n path="vixens.content" tag="p" align="left">
-              <a href="https://medium.com/@jenlooper/introducing-vue-vixens-82a36455438a"
+              <a class="link-green" href="https://medium.com/@jenlooper/introducing-vue-vixens-82a36455438a"
                  place="medium">{{ $t("vixens.mediumLink") }}</a>
-              <a href="http://www.jenlooper.com"
+              <a class="link-green" href="http://www.jenlooper.com"
                  place="jen">{{ $t("vixens.jenLink") }}</a>
-              <a href="http://www.progress.com"
+              <a class="link-green" href="http://www.progress.com"
                  place="progress">{{ $t("vixens.progressLink") }}</a>
-              <a href="http://www.ng-girls.org"
+              <a class="link-green" href="http://www.ng-girls.org"
                  place="ngGirls">{{ $t("vixens.ngGirlsLink") }}</a>
-              <a href="mailto:info@vuevixens.org"
+              <a class="link-green" href="mailto:info@vuevixens.org"
                  place="mail">{{ $t("vixens.mailLink") }}</a>
             </i18n>
             <h4 class="title">{{ $t("activities.title") }}</h4>

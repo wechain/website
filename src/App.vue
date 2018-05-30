@@ -63,7 +63,7 @@
     opacity: 0;
   }
 
-  a {
+  .link-green {
     color: #42b983;
   }
 
