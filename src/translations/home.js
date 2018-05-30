@@ -3,7 +3,7 @@ export default {
     title: {
       msg: 'Welcome to Vue Vixens!',
       tagline: 'Vue Vixens are foxy people who identify as women and who want to learn Vue.js' +
-      'to make websites and mobile apps',
+      ' to make websites and mobile apps',
     },
     eventsTitle: 'Upcoming Events',
     skulk: {
@@ -23,7 +23,7 @@ export default {
     title: {
       msg: 'ES - Welcome to Vue Vixens!',
       tagline: 'ES - Vue Vixens are foxy people who identify as women and who want to learn Vue.js' +
-      'to make websites and mobile apps',
+      ' to make websites and mobile apps',
     },
     eventsTitle: 'ES - Upcoming Events',
     skulk: {
