@@ -26,7 +26,21 @@ Vue.use(VueAnalytics, {
 Vue.config.productionTip = false;
 
 const messages = {
-  en: {},
+  en: {
+    menu: {
+      about: 'About',
+      upcoming: 'Upcoming Events',
+      request: 'Request a Skulk',
+      sponsors: 'Sponsors',
+      team: 'Team',
+      gallery: 'Gallery',
+      shop: 'Shop'
+    },
+    languages: {
+      en: 'English',
+      es: 'Spanish'
+    }
+  },
   es: {}
 };
 

@@ -21,24 +21,23 @@
     <div>
       <b-dropdown id="translations" :text="currentLocale" right class="m-md-2">
         <b-dropdown-item class="translation-item"
-                         @click="changeLocale('en')">{{ $t("locales.en") }}</b-dropdown-item>
+                         @click="changeLocale('en')">{{ $t("languages.en") }}</b-dropdown-item>
         <b-dropdown-item class="translation-item"
-                         @click="changeLocale('es')">{{ $t("locales.es") }}</b-dropdown-item>
+                         @click="changeLocale('es')">{{ $t("languages.es") }}</b-dropdown-item>
       </b-dropdown>
     </div>
   </b-navbar>
 </template>
 
 <script>
-  import messages from '../translations/header'
   export default {
     computed: {
       currentLocale() {
         switch(this.$i18n.locale) {
           case 'en':
-            return this.$t("locales.en");
+            return this.$t("languages.en");
           case 'es':
-            return this.$t("locales.es");
+            return this.$t("languages.es");
         }
       }
     },
@@ -47,9 +46,6 @@
         this.$i18n.locale = locale;
       }
     },
-    i18n: {
-      messages
-    }
   }
 </script>
 
