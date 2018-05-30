@@ -8,36 +8,37 @@
     <b-collapse is-nav id="nav_collapse">
 
       <b-navbar-nav>
-        <b-nav-item :to="{ name: 'about'}">About</b-nav-item>
-        <b-nav-item :to="{ name: 'upcoming'}">Upcoming Events</b-nav-item>
-        <b-nav-item :to="{ name: 'request'}">Request a Skulk</b-nav-item>
-        <b-nav-item :to="{ name: 'sponsors'}">Sponsors</b-nav-item>
-        <b-nav-item :to="{ name: 'team'}">Team</b-nav-item>
-        <b-nav-item :to="{ name: 'gallery'}">Gallery</b-nav-item>
-        <b-nav-item href="https://vuevixens.threadless.com/">Shop</b-nav-item>
+        <b-nav-item :to="{ name: 'about'}">{{ $t("menu.about") }}</b-nav-item>
+        <b-nav-item :to="{ name: 'upcoming'}">{{ $t("menu.upcoming") }}</b-nav-item>
+        <b-nav-item :to="{ name: 'request'}">{{ $t("menu.request") }}</b-nav-item>
+        <b-nav-item :to="{ name: 'sponsors'}">{{ $t("menu.sponsors") }}</b-nav-item>
+        <b-nav-item :to="{ name: 'team'}">{{ $t("menu.team") }}</b-nav-item>
+        <b-nav-item :to="{ name: 'gallery'}">{{ $t("menu.gallery") }}</b-nav-item>
+        <b-nav-item href="https://vuevixens.threadless.com/">{{ $t("menu.shop") }}</b-nav-item>
       </b-navbar-nav>
 
     </b-collapse>
     <div>
       <b-dropdown id="translations" :text="currentLocale" right class="m-md-2">
         <b-dropdown-item class="translation-item"
-                         @click="changeLocale('en')">English</b-dropdown-item>
+                         @click="changeLocale('en')">{{ $t("locales.en") }}</b-dropdown-item>
         <b-dropdown-item class="translation-item"
-                         @click="changeLocale('es')">Spanish</b-dropdown-item>
+                         @click="changeLocale('es')">{{ $t("locales.es") }}</b-dropdown-item>
       </b-dropdown>
     </div>
   </b-navbar>
 </template>
 
 <script>
+  import messages from '../translations/header'
   export default {
     computed: {
       currentLocale() {
         switch(this.$i18n.locale) {
           case 'en':
-            return 'English';
+            return this.$t("locales.en");
           case 'es':
-            return 'Spanish';
+            return this.$t("locales.es");
         }
       }
     },
@@ -45,6 +46,9 @@
       changeLocale(locale) {
         this.$i18n.locale = locale;
       }
+    },
+    i18n: {
+      messages
     }
   }
 </script>
