@@ -14,7 +14,9 @@
                 <li>{{ $t("li3") }}</li>
               </ul>
               <p align="center">
-                  <b-button class="btn toggle-button btn-success btn-lg" size="lg" href="https://ladeezfirstmedia.typeform.com/to/dlOUZe">{{ $t("button") }}</b-button>
+                  <b-button class="btn toggle-button btn-success btn-lg"
+                            size="lg"
+                            href="https://ladeezfirstmedia.typeform.com/to/dlOUZe">{{ $t("button") }}</b-button>
                 </p>
             </div>
           </div>

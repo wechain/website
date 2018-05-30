@@ -2,7 +2,7 @@
   <b-container fluid>
     <b-row>
       <b-col md="8" offset-md="2">
-        <h4 class="title text-center">Our Team</h4>
+        <h4 class="title text-center">{{ $t("team") }}</h4>
         <b-row v-if="!!story.content && !!story.content.body">
           <b-col md="6" v-for="partner in story.content.body"
                  :key="partner.name">
@@ -28,7 +28,7 @@
           </b-col>
         </b-row>
         <!--board of directors-->
-        <h4 class="title text-center">Board of Directors</h4>
+        <h4 class="title text-center">{{ $t("board") }}</h4>
         <b-row v-if="!!story.content && !!story.content.body">
           <b-col md="6" v-for="partner in story.content.body"
                  :key="partner.name">
@@ -60,7 +60,7 @@
 
 <script>
   import storyblok from "../mixins/storyblok";
-
+  import messages from '../translations/team'
   export default {
     mixins: [storyblok],
     data() {
@@ -68,6 +68,9 @@
         slug: 'partners',
       }
     },
+    i18n: {
+      messages
+    }
   }
 </script>
 
