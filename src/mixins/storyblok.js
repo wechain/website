@@ -12,17 +12,18 @@ export default {
     this.$storyblok.on('published', () => {
       this.loadStory('draft')
     });
-
     this.$storyblok.pingEditor(() => {
       this.loadStory(this.$storyblok.inEditor ? 'draft' : 'published')
-    })
+    });
+    this.$eventBus.$on('changeLocale', locale => {
+      this.loadStory('published', locale)
+    });
   },
   methods: {
-    loadStory(version) {
+    loadStory(version, locale) {
       this.loading = true;
       this.$storyblok.get({
-        slug: this.slug,
-        // slug: `${this.$i18n.locale}/${this.slug}`,
+        slug: locale ? `${locale}/${this.slug}`: `en/${this.slug}`,
         version: version
       }, (data) => {
         this.story = {

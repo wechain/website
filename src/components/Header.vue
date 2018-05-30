@@ -44,6 +44,7 @@
     methods: {
       changeLocale(locale) {
         this.$i18n.locale = locale;
+        this.$eventBus.$emit('changeLocale', locale);
       }
     },
   }

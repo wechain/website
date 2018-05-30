@@ -49,6 +49,8 @@ const i18n = new VueI18n({
   messages,
 });
 
+Vue.prototype.$eventBus = new Vue();
+
 new Vue({
   el: '#app',
   router,
