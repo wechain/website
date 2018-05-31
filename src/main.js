@@ -9,6 +9,7 @@ import VueAnalytics from 'vue-ua'
 import VueI18n from 'vue-i18n'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'flag-icon-css/css/flag-icon.min.css'
 import router from './router'
 
 Vue.use(BootstrapVue);
