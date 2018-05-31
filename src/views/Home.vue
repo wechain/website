@@ -78,6 +78,9 @@
 </script>
 
 <style lang="scss" scoped>
+  .card {
+    height: 100%;
+  }
 
   .spotlight {
     background-color: #47B784;

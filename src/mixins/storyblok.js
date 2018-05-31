@@ -7,13 +7,13 @@ export default {
   },
   created: function () {
     this.$storyblok.on('change', () => {
-      this.loadStory('draft')
+      this.loadStory('draft', this.$i18n.locale)
     });
     this.$storyblok.on('published', () => {
-      this.loadStory('draft')
+      this.loadStory('draft', this.$i18n.locale)
     });
     this.$storyblok.pingEditor(() => {
-      this.loadStory(this.$storyblok.inEditor ? 'draft' : 'published')
+      this.loadStory(this.$storyblok.inEditor ? 'draft' : 'published', this.$i18n.locale)
     });
     this.$eventBus.$on('changeLocale', locale => {
       this.loadStory('published', locale)
