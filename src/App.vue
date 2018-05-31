@@ -19,6 +19,7 @@
         //accessToken: 'plc0fBh2no8owEeTALSN2wtt'
         accessToken: 'fjDrPjQqBuBfO2GzzbzHvQtt'
       });
+      this.$eventBus.$on('changeLocale', locale =>  this.$i18n.locale = locale )
     }
   }
 </script>

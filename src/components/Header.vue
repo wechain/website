@@ -30,6 +30,7 @@
 </template>
 
 <script>
+  import messages from '../translations/header'
   export default {
     computed: {
       currentLocale() {
@@ -43,10 +44,12 @@
     },
     methods: {
       changeLocale(locale) {
-        this.$i18n.locale = locale;
         this.$eventBus.$emit('changeLocale', locale);
       }
     },
+    i18n: {
+      messages
+    }
   }
 </script>
 
