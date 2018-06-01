@@ -62,6 +62,68 @@ export default {
     }
   },
   es: {
-
+    vixens: {
+      title: 'Vue Vixens',
+      content: `{medium} es una iniciativa fundada por {jen}, Developer Advocate en
+              {progress}, que organiza y workshops para enseñar
+              Vue.js a personas de la comunidad diversa y con poca representación, de manera entretenida.
+              Está basada en el exitoso modelo iniciado por Shmuela Jacobs para la comunidad de Angular
+              ({ngGirls}) que tambien fue inspirada
+              por las iniciativas Rails Bridge y Django Girls.
+              El formato consiste en code labs tipo workshop que pueden ser completados de manera independiente,
+              o en grupos con mentoreo de las mismas personas que asisten a las conferencias y speakers que nos
+              ayudan de manera voluntaria.
+              La meta del programa es familiarizar a mujeres y quienes se identifican como tal
+              con Vue.js en un ambiente inclusivo y seguro. Tambien ayudamos a distintas conferencias y eventos
+              a organizar sus iniciativas de apoyo a la diversidad, como ofrecer tickets gratuitos, 
+              y tambien estamos en proceso de mantener un fondo de becas para ayudar 
+              a abaratar los costos para asistir a conferencias para que más personas de la comunidad diversa
+              puedan asistir.
+              Preguntas? Escribenos a {mail}`,
+      mediumLink: 'Vue Vixens',
+      jenLink: 'Jen Looper',
+      progressLink: 'Progress',
+      ngGirlsLink: 'ng-girls.org',
+      mailLink: 'info@vuevixens.org',
+    },
+    activities: {
+      title: 'Sobre nuestras actividades',
+      content: {
+        paragraph1: `Qué puedes esperar de un evento de Vue Vixens? Bueno, como estudiante, 
+              tal vez comenzando con el desarrollo front end, se te da la oportunidad de aprender
+              acerca de Vue.js, un framework genial, fresco para desarrollar web y mobile apps. Durante
+              un desayuno, un "lunch 'n' learn", o dia entero, trabajarás con mentoría en grupos pequeños
+              en un workshop de tipo "self-driven".
+              Completarás la tarea de construir
+              una app web y una mobile app que te enseñarán acerca del framework y programar en JavaScript.
+              Tambien tendrás la oportunidad de conocer y trabajar con personas con mindsets similares 
+              y relacionarte con liders de la industria - generalmente quienes mentorean son speakers en las
+              conferencias a las que asistes.`,
+        paragraph2: `{mentorsNote}: Si te sumas a un skulk de Vue Vixens para mentorear, primero que todo,
+              muchísimas gracas!. Gracias a ti, podemos ofrecer workshops gratuitos para quienes se inician
+              en el mundo del desarrollo, en un ambiente inclusivo y seguro.
+              Tu tarea es permanecer con tu alumnado durante el dia,
+              ayudandoles con cualquier dificultad y dandoles una perspectiva de lo que puede ser la vida de
+              quien se desempeña en la industria del desarrollo. Eres lo más!
+              Queremos aclarar, que cualquier persona puede mentorear en Vue Vixens!, agradecemos tu participacion.`,
+        mentorsNote: `Nota para mentorxs`,
+        paragraph3: `{studentsNote}: Dudas si un skulk de Vue Vixens es para ti? Si estás comenzando o en 
+              cualquier nivel con Vue.js developer y tus pronombres son ELLA o ELLE, eres más que
+              bienvenidx. No nos gusta dejar a nadie afuera, pero este grupo es para mujeres y quienes se identifican
+              como tal. Acogemos a lxs trans y somos sus amigxs!.
+              La fundadora de Vue Vixens, Jen Looper, es egresada de Wellesley College (clase del '92) y
+              toma el criterio de admision de su universidad
+              como blueprint. Parafraseando su criterio de admision:`,
+        studentsNote: 'Nota para estudiantes',
+        paragraph4: `"Admitiremos cualquier persona que viva como mujer y se identifique como tal;
+              por lo tanto, candidatxs nacidxs varones,
+              que se identifiquen como mujeres son elegibles. Tambien son bienvenidas quienes hayan nacido mujeres
+              y que sientan que pertenecen en nuestra comunidad de mujeres.
+              Queremos proveer a nuestrxs estudiantes, una experiencia de aprendizaje única, empoderadora, 
+              en un ambiente de aprendizaje de contencion, diseñado especificamente para preparar mujeres 
+              para sobresalir en un mundo complejo."`,
+        paragraph5: 'Gracias por comprendernos! 🦊',
+      }
+    }
   }
-};
+}

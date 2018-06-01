@@ -12,6 +12,16 @@ export default {
                 worth checking out!`
   },
   es: {
+    title: 'Créditos',
+    subtitle: `Estamos en deuda con varios recursos tanto en línea como en persona`,
+    item1: `🦊 Las fotos en este site son de {unsplash}
+                por Joey Kyber, Westley Ferguson, Caleb Woods, Jeremy Vessey, Ray Hennessey, Climate KIC,
+                Dai KE, Hans Veth, Mikael Kristenson, Nathan Anderson. la imagen del skulk fue tomada 
+                de {artist}`,
+    unsplashLink: 'Unsplash',
+    artistLink: 'KaiXinFun',
+    item2: `🦊 Este proyecto fue inspirado por {ngGirls}, {djangoGirls}, y {railsBridge}. Iniciativas
+                increibles, vale echarles un vistazo!`
 
   }
 };

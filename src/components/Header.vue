@@ -79,7 +79,7 @@
     order: 3
   }
   @media (max-width: 768px) {
-    .translations {
+    .translations  {
       order: 0
     }
   }

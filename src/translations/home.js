@@ -21,22 +21,22 @@ export default {
   },
   es: {
     title: {
-      msg: 'ES - Welcome to Vue Vixens!',
-      tagline: 'ES - Vue Vixens are foxy people who identify as women and who want to learn Vue.js' +
-      ' to make websites and mobile apps',
+      msg: 'Bienvenidx a Vue Vixens!',
+      tagline: 'Vue Vixens es gente "foxy" que se identifica como mujer y que quiere aprender Vue.js' +
+      ' para hacer websites y mobile apps',
     },
-    eventsTitle: 'ES - Upcoming Events',
+    eventsTitle: 'Próximos Eventos',
     skulk: {
-      title: 'ES - Join a Skulk',
-      content: 'ES - Want to learn Vue.js? Join a Vue Vixen Skulk for free!'
+      title: 'Sumate a un Skulk',
+      content: 'Deseas aprender Vue.js? Sumate a un Vue Vixen Skulk de manera gratuita!'
     },
     program: {
-      title: 'ES - The Program',
-      content: 'ES - Students and Mentors, learn more about our program.'
+      title: 'El Programa',
+      content: 'Estudiantes y Mentorxs, más informacion sobre nuestro programa.'
     },
     request: {
-      title: 'ES - Request',
-      content: 'ES - Conference organizers, register to host a workshop.'
+      title: 'Solicitudes',
+      content: 'Organizadores de eventos y conferencias, registrarse para organizar un workshop.'
     },
   }
 };

@@ -4,5 +4,7 @@ export default {
     credits: 'Credits'
   },
   es: {
+	progress: 'Un proyecto apoyado por Progress',
+    credits: 'Créditos'
   }
 };

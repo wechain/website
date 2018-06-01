@@ -5,6 +5,9 @@ export default {
               a conference near you!`
   },
   es: {
-
+	title: 'próximos Skulks',
+    subtitle: `Que es un skulk? Una manada de "foxes". Como la palabra en español, se puede prestar a confusiones 
+    graciosas y no tanto... 😂 hemos decidido usar los nombres en inglés!. Aquí encontrarás nuestros próximos
+              eventos y conferencias cerca de ti!`
   }
 };

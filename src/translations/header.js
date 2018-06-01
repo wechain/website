@@ -11,8 +11,22 @@ export default {
     },
     languages: {
       en: 'English',
-      es: 'Spanish'
+      es: 'Español'
     }
   },
-  es: {}
+  es: {
+    menu: {
+      about: 'Acerca de',
+      upcoming: 'Próximos Eventos',
+      request: 'Solicita un Skulk',
+      sponsors: 'Sponsors',
+      team: 'Equipo',
+      gallery: 'Galería',
+      shop: 'Tienda'
+    },
+    languages: {
+      en: 'English',
+      es: 'Español'
+    }
+  }
 }
