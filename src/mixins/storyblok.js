@@ -15,16 +15,13 @@ export default {
     this.$storyblok.pingEditor(() => {
       this.loadStory(this.$storyblok.inEditor ? 'draft' : 'published', this.$i18n.locale)
     });
-    this.$eventBus.$on('changeLocale', locale => {
-      console.log(this.slug);
-      this.loadStory('published', locale)
-    });
+    this.$eventBus.$on('changeLocale', this.listener);
   },
   methods: {
     loadStory(version, locale) {
       this.loading = true;
       this.$storyblok.get({
-        slug: locale ? `${locale}/${this.slug}`: `en/${this.slug}`,
+        slug: !locale || locale === 'en' ? `${this.slug}`: `${locale}/${this.slug}`,
         version: version
       }, (data) => {
         this.story = {
@@ -37,9 +34,12 @@ export default {
       }, (error) => {
         this.loading = false;
       });
+    },
+    listener(locale) {
+      this.loadStory('published', locale)
     }
   },
   beforeDestroy() {
-    this.$eventBus.$off();
+    this.$eventBus.$off('changeLocale', this.listener);
   }
 }
