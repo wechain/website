@@ -16,6 +16,7 @@ export default {
       this.loadStory(this.$storyblok.inEditor ? 'draft' : 'published', this.$i18n.locale)
     });
     this.$eventBus.$on('changeLocale', locale => {
+      console.log(this.slug);
       this.loadStory('published', locale)
     });
   },
@@ -37,5 +38,8 @@ export default {
         this.loading = false;
       });
     }
+  },
+  beforeDestroy() {
+    this.$eventBus.$off();
   }
 }
