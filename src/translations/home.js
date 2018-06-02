@@ -18,6 +18,10 @@ export default {
       title: 'Request',
       content: 'Conference organizers, register to host a workshop.'
     },
+    patreon: {
+      msg: 'Do you want to support us? We have a Patreon account!',
+      button: 'Become a Patron',
+    }  
   },
   es: {
     title: {
@@ -38,5 +42,9 @@ export default {
       title: 'Solicitudes',
       content: 'Organizadores de eventos y conferencias, registrarse para organizar un workshop.'
     },
+    patreon: {
+      msg: 'Quisieras apoyarnos? Tenemos una cuenta en Patreon!',
+      button: 'Apoyanos como Patron',
+    } 
   }
 };

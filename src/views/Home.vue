@@ -62,14 +62,14 @@
       <b-col class="spotlight patreon">
         <b-row>
           <b-col md="6" sm="12">
-            Do you want to support us? We have a Patreon account!
+             {{ $t("patreon.msg") }}
           </b-col>
           <b-col class="align-right" md="6" sm="12">
             <b-button href="https://www.patreon.com/vuevixens/overview"
                       target="_blank"
                       variant="danger">
               <img src="../assets/patreon.png" alt="Patreon logo">
-              Become a Patron
+                {{ $t("patreon.button") }}
             </b-button>
           </b-col>
         </b-row>
