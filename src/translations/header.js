@@ -7,7 +7,8 @@ export default {
       sponsors: 'Sponsors',
       team: 'Team',
       gallery: 'Gallery',
-      shop: 'Shop'
+      shop: 'Shop',
+      workshops: 'Workshops'
     },
     languages: {
       en: 'English',
@@ -22,7 +23,8 @@ export default {
       sponsors: 'Sponsors',
       team: 'Equipo',
       gallery: 'Galería',
-      shop: 'Tienda'
+      shop: 'Tienda',
+      workshops: 'Workshops'
     },
     languages: {
       en: 'English',

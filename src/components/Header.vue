@@ -22,6 +22,7 @@
 
     <b-collapse is-nav id="nav_collapse">
       <b-navbar-nav>
+        <b-button href="https://vuevixens.github.io/docs/workshop/" target="_blank" class="btn-sm workshops">{{ $t("menu.workshops") }}</b-button>
         <b-nav-item :to="{ name: 'about'}">{{ $t("menu.about") }}</b-nav-item>
         <b-nav-item :to="{ name: 'upcoming'}">{{ $t("menu.upcoming") }}</b-nav-item>
         <b-nav-item :to="{ name: 'request'}">{{ $t("menu.request") }}</b-nav-item>
@@ -75,12 +76,23 @@
     }
   }
 
+  .workshops {
+    background-color: #E76F54;
+      font-size: 22px;
+  }
+
   .translations {
     order: 3
   }
+
   @media (max-width: 768px) {
     .translations  {
       order: 0
+    }
+
+    .workshops {
+      font-size: 22px;
+      margin-top: 10px;
     }
   }
 </style>
