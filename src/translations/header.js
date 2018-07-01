@@ -7,6 +7,7 @@ export default {
       sponsors: 'Sponsors',
       team: 'Team',
       gallery: 'Gallery',
+      library: 'Library',
       shop: 'Shop',
       workshops: 'Workshops'
     },
@@ -24,6 +25,7 @@ export default {
       team: 'Equipo',
       gallery: 'Galería',
       shop: 'Tienda',
+      library: 'Library',
       workshops: 'Workshops'
     },
     languages: {

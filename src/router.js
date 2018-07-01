@@ -10,6 +10,7 @@ import Event from '@/views/Event'
 import Gallery from '@/views/Gallery'
 import GalleryItem from '@/views/GalleryItem'
 import NotFoundComponent from '@/views/NotFoundComponent'
+import Library from '@/views/Library'
 
 export default new Router({
   routes: [
@@ -61,6 +62,11 @@ export default new Router({
     {
       path: '/events/:event',
       component: Event,
+    },
+    {
+      path: '/library',
+      name: 'library',
+      component: Library,
     },
     {
       path: '/home',
