@@ -25,10 +25,10 @@
         <b-button href="https://vuevixens.github.io/docs/workshop/" target="_blank" class="btn-sm workshops">{{ $t("menu.workshops") }}</b-button>
         <b-nav-item :to="{ name: 'about'}">{{ $t("menu.about") }}</b-nav-item>
         <b-nav-item :to="{ name: 'upcoming'}">{{ $t("menu.upcoming") }}</b-nav-item>
-        <b-nav-item :to="{ name: 'request'}">{{ $t("menu.request") }}</b-nav-item>
         <b-nav-item :to="{ name: 'sponsors'}">{{ $t("menu.sponsors") }}</b-nav-item>
         <b-nav-item :to="{ name: 'team'}">{{ $t("menu.team") }}</b-nav-item>
         <b-nav-item :to="{ name: 'gallery'}">{{ $t("menu.gallery") }}</b-nav-item>
+        <b-nav-item :to="{ name: 'library'}">{{ $t("menu.library") }}</b-nav-item>
         <b-nav-item href="https://vuevixens.threadless.com/">{{ $t("menu.shop") }}</b-nav-item>
       </b-navbar-nav>
 
@@ -83,6 +83,12 @@
 
   .translations {
     order: 3
+  }
+
+  @media (max-width: 1280px) {
+    .nav-item {
+      margin: 0;
+    }
   }
 
   @media (max-width: 768px) {
