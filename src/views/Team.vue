@@ -4,9 +4,9 @@
       <b-col md="8" offset-md="2">
         <h4 class="title text-center">{{ $t("team") }}</h4>
         <b-row v-if="!!story.content && !!story.content.body">
-          <b-col md="6" v-for="partner in story.content.body"
+          <b-col md="6" v-for="partner in story.content.body" v-if="partner.staff"
                  :key="partner.name">
-            <article class="card" v-editable="partner" v-if="partner.staff">
+            <article class="card" v-editable="partner">
               <img :src="partner.img"
                    class="card-img-top"/>
               <div class="card-body">
@@ -30,9 +30,9 @@
         <!--board of directors-->
         <h4 class="title text-center">{{ $t("board") }}</h4>
         <b-row v-if="!!story.content && !!story.content.body">
-          <b-col md="6" v-for="partner in story.content.body"
+          <b-col md="6" v-for="partner in story.content.body" v-if="!partner.staff && !partner.regional"
                  :key="partner.name">
-            <article class="card" v-editable="partner" v-if="!partner.staff && !partner.regional">
+            <article class="card" v-editable="partner">
               <img :src="partner.img"
                    class="card-img-top"/>
               <div class="card-body">
@@ -56,9 +56,9 @@
         <!--regional leaders-->
         <h4 class="title text-center">{{ $t("regional") }}</h4>
         <b-row v-if="!!story.content && !!story.content.body">
-          <b-col md="6" v-for="partner in story.content.body"
+          <b-col md="6" v-for="partner in story.content.body" v-if="partner.regional"
                  :key="partner.name">
-            <article class="card" v-editable="partner" v-if="partner.regional">
+            <article class="card" v-editable="partner">
               <img :src="partner.img"
                    class="card-img-top"/>
               <div class="card-body">
