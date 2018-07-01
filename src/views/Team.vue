@@ -32,7 +32,33 @@
         <b-row v-if="!!story.content && !!story.content.body">
           <b-col md="6" v-for="partner in story.content.body"
                  :key="partner.name">
-            <article class="card" v-editable="partner" v-if="!partner.staff">
+            <article class="card" v-editable="partner" v-if="!partner.staff && !partner.regional">
+              <img :src="partner.img"
+                   class="card-img-top"/>
+              <div class="card-body">
+                <h4 class="title">{{partner.name}}</h4>
+                <h5>{{partner.title}}</h5>
+                <p class="card-text">
+                  {{partner.bio}}
+                </p>
+                <p v-if="partner.twitter">
+                  <i class="fab fa-twitter"></i>
+                  <a class="link-green" :href="'http://www.twitter.com/' + partner.twitter">@{{partner.twitter}}</a>
+                </p>
+                <p v-if="partner.website.url">
+                  <i class="fas fa-link"></i>
+                  <a class="link-green" :href="partner.website.url">{{partner.website.url}}</a>
+                </p>
+              </div>
+            </article>
+          </b-col>
+        </b-row>
+        <!--regional leaders-->
+        <h4 class="title text-center">{{ $t("regional") }}</h4>
+        <b-row v-if="!!story.content && !!story.content.body">
+          <b-col md="6" v-for="partner in story.content.body"
+                 :key="partner.name">
+            <article class="card" v-editable="partner" v-if="partner.regional">
               <img :src="partner.img"
                    class="card-img-top"/>
               <div class="card-body">
