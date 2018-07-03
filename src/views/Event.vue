@@ -9,7 +9,7 @@
               <div class="card-body">
                 <h4 class="title"><p align="center">{{currentEvent.title}}</p></h4>
                 <div class="card-meta">
-                  <p v-if="currentEvent.conference">
+                  <p v-if="currentEvent.conference.url">
                     <i class="fas fa-link"></i>
                     <a :href="currentEvent.conference.url">{{currentEvent.conference.url}}</a>
                   </p>
