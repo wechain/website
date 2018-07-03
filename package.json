@@ -2,55 +2,27 @@
   "name": "vuevixens",
   "version": "1.0.0",
   "description": "Workshops for Foxy People",
-  "author": "jlooper <jen.looper@gmail.com>",
+  "author": "NataliaTepluhin <tarya.se@gmail.com>",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --open",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
   "dependencies": {
-    "bootstrap": "^4.1.0",
-    "bootstrap-vue": "^2.0.0-rc.6",
-    "firebase": "^4.12.1",
-    "flag-icon-css": "^3.0.0",
-    "register-service-worker": "^1.0.0",
-    "storyblok-vue": "^1.0.4",
-    "vue": "^2.5.13",
-    "vue-form-generator": "^2.2.1",
-    "vue-i18n": "^7.7.0",
-    "vue-moment": "^3.2.0",
-    "vue-router": "^3.0.1",
-    "vue-simple-calendar": "^2.2.0",
-    "vuefire": "^1.4.5"
+    "nuxt": "^1.0.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vuetify": "^1.1.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0-beta.6",
-    "@vue/cli-plugin-eslint": "^3.0.0-beta.6",
-    "@vue/cli-plugin-pwa": "^3.0.0-beta.6",
-    "@vue/cli-service": "^3.0.0-beta.6",
-    "lint-staged": "^6.0.0",
-    "node-sass": "^4.7.2",
-    "sass-loader": "^6.0.6",
-    "vue-template-compiler": "^2.5.13",
-    "vue-ua": "^1.5.0"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "vue-cli-service lint",
-      "git add"
-    ],
-    "*.vue": [
-      "vue-cli-service lint",
-      "git add"
-    ]
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
   }
 }
