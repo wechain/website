@@ -1,9 +1,7 @@
 <template>
-  <section class="container">
-    <div>
-      <v-btn color="teal" light>TEST!</v-btn>
-    </div>
-  </section>
+  <div>
+    test
+  </div>
 </template>
 
 <script>

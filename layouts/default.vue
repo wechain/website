@@ -1,12 +1,45 @@
 <template>
-  <div>
-    <nuxt/>
-  </div>
+  <v-app>
+    <v-navigation-drawer
+      v-model="showDrawer"
+      app
+      dark
+    />
+    <v-toolbar color="secondary" dark fixed app scroll-off-screen :scroll-threshold="1">
+      <v-toolbar-side-icon class="hidden-md-and-up" @click.stop="showDrawer = !showDrawer"></v-toolbar-side-icon>
+      <v-toolbar-title class="vv-logo">
+        <img src="../assets/images/logo.png" alt="VueVixens Logo">
+        Vue Vixens
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn flat>Link One</v-btn>
+        <v-btn flat>Link Two</v-btn>
+        <v-btn flat>Link Three</v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
+    <v-content>
+        <nuxt/>
+    </v-content>
+    <v-footer color="secondary" app>
+      <span class="white--text">&copy; 2017</span>
+    </v-footer>
+  </v-app>
 </template>
 
-<style>
+<script>
+  export default {
+    data() {
+      return {
+        showDrawer: false
+      }
+    }
+  }
+</script>
+
+<style lang="scss">
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -21,32 +54,13 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
+  .v-toolbar__title.vv-logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    img {
+      max-width: 40px;
+      margin-right: 10px;
+    }
+  }
 </style>
