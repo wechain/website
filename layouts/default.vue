@@ -1,10 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer
-      v-model="showDrawer"
-      app
-      dark
-    />
+    <VVDrawer :showDrawer="showDrawer" @toggleDrawer="toggleDrawer($event)" />
     <VVHeader @toggleDrawer="showDrawer = !showDrawer"  />
     <v-content>
         <nuxt/>
@@ -17,9 +13,11 @@
 
 <script>
   import VVHeader from '../components/Header'
+  import VVDrawer from '../components/Drawer'
   export default {
     components: {
       VVHeader,
+      VVDrawer,
     },
     data() {
       return {
@@ -28,6 +26,11 @@
     },
     created() {
       this.$bus.$on('changeLocale', locale =>  this.$i18n.locale = locale )
+    },
+    methods: {
+      toggleDrawer() {
+        this.showDrawer = event;
+      }
     }
   }
 </script>
