@@ -3,6 +3,12 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+const _0fc50f53 = () => import('../pages/Upcoming.vue' /* webpackChunkName: "pages/Upcoming" */).then(m => m.default || m)
+const _d890df60 = () => import('../pages/Sponsors.vue' /* webpackChunkName: "pages/Sponsors" */).then(m => m.default || m)
+const _ea25fb34 = () => import('../pages/About.vue' /* webpackChunkName: "pages/About" */).then(m => m.default || m)
+const _03a73f6b = () => import('../pages/Gallery.vue' /* webpackChunkName: "pages/Gallery" */).then(m => m.default || m)
+const _5f6c1054 = () => import('../pages/Library.vue' /* webpackChunkName: "pages/Library" */).then(m => m.default || m)
+const _876030d8 = () => import('../pages/Team.vue' /* webpackChunkName: "pages/Team" */).then(m => m.default || m)
 const _3332bd4b = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
 
 
@@ -63,6 +69,36 @@ export function createRouter () {
     linkExactActiveClass: 'nuxt-link-exact-active',
     scrollBehavior,
     routes: [
+		{
+			path: "/Upcoming",
+			component: _0fc50f53,
+			name: "Upcoming"
+		},
+		{
+			path: "/Sponsors",
+			component: _d890df60,
+			name: "Sponsors"
+		},
+		{
+			path: "/About",
+			component: _ea25fb34,
+			name: "About"
+		},
+		{
+			path: "/Gallery",
+			component: _03a73f6b,
+			name: "Gallery"
+		},
+		{
+			path: "/Library",
+			component: _5f6c1054,
+			name: "Library"
+		},
+		{
+			path: "/Team",
+			component: _876030d8,
+			name: "Team"
+		},
 		{
 			path: "/",
 			component: _3332bd4b,

@@ -5,19 +5,7 @@
       app
       dark
     />
-    <v-toolbar color="secondary" dark fixed app scroll-off-screen :scroll-threshold="1">
-      <v-toolbar-side-icon class="hidden-md-and-up" @click.stop="showDrawer = !showDrawer"></v-toolbar-side-icon>
-      <v-toolbar-title class="vv-logo">
-        <img src="../assets/images/logo.png" alt="VueVixens Logo">
-        Vue Vixens
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat>Link One</v-btn>
-        <v-btn flat>Link Two</v-btn>
-        <v-btn flat>Link Three</v-btn>
-      </v-toolbar-items>
-    </v-toolbar>
+    <VVHeader @toggleDrawer="showDrawer = !showDrawer"  />
     <v-content>
         <nuxt/>
     </v-content>
@@ -28,11 +16,18 @@
 </template>
 
 <script>
+  import VVHeader from '../components/Header'
   export default {
+    components: {
+      VVHeader,
+    },
     data() {
       return {
         showDrawer: false
       }
+    },
+    created() {
+      this.$bus.$on('changeLocale', locale =>  this.$i18n.locale = locale )
     }
   }
 </script>
@@ -58,6 +53,7 @@ html {
     display: flex;
     align-items: center;
     margin: 0;
+    cursor: pointer;
     img {
       max-width: 40px;
       margin-right: 10px;
