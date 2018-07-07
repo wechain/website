@@ -5,12 +5,12 @@
 </template>
 
 <script>
-  import storyblok from '../mixins/storyblok'
+  import storyblok from '../../mixins/storyblok'
   export default {
     mixins: [storyblok],
-    data() {
-      return {
-        slug: 'partners',
+    computed: {
+      slug() {
+        return `galleries/${this.$route.params.gallery}`;
       }
     },
   }

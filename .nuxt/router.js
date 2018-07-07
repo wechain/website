@@ -9,6 +9,8 @@ const _ea25fb34 = () => import('../pages/About.vue' /* webpackChunkName: "pages/
 const _03a73f6b = () => import('../pages/Gallery.vue' /* webpackChunkName: "pages/Gallery" */).then(m => m.default || m)
 const _5f6c1054 = () => import('../pages/Library.vue' /* webpackChunkName: "pages/Library" */).then(m => m.default || m)
 const _876030d8 = () => import('../pages/Team.vue' /* webpackChunkName: "pages/Team" */).then(m => m.default || m)
+const _66e4f629 = () => import('../pages/galleries/_gallery.vue' /* webpackChunkName: "pages/galleries/_gallery" */).then(m => m.default || m)
+const _7da7e34a = () => import('../pages/events/_event.vue' /* webpackChunkName: "pages/events/_event" */).then(m => m.default || m)
 const _3332bd4b = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
 
 
@@ -98,6 +100,16 @@ export function createRouter () {
 			path: "/Team",
 			component: _876030d8,
 			name: "Team"
+		},
+		{
+			path: "/galleries/:gallery?",
+			component: _66e4f629,
+			name: "galleries-gallery"
+		},
+		{
+			path: "/events/:event?",
+			component: _7da7e34a,
+			name: "events-event"
 		},
 		{
 			path: "/",

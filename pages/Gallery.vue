@@ -7,11 +7,11 @@
 <script>
   import storyblok from '../mixins/storyblok'
   export default {
-    mixins: [storyblok],
-    async asyncData (context) {
-      let version = context.query._storyblok || context.isDev ? 'draft' : 'published';
-      const response = await context.app.$storyapi.get(`cdn/stories/gallery`, { version });
-      return response.data;
+    data() {
+      return {
+        slug: 'gallery',
+      }
     },
+    mixins: [storyblok],
   }
 </script>

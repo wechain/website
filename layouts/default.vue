@@ -22,7 +22,6 @@
     data() {
       return {
         showDrawer: false,
-        slug: 'home',
         story: {},
       }
     },
