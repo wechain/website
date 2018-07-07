@@ -32,7 +32,8 @@ module.exports = {
   modules: [
     ['@nuxtjs/google-analytics', {
       id: 'UA-65309624-3'
-    }]
+    }],
+    ['storyblok-nuxt', {accessToken: 'plc0fBh2no8owEeTALSN2wtt', cacheProvider: 'memory'}],
   ],
   loading: { color: '#3B8070' },
   build: {

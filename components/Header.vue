@@ -16,7 +16,7 @@
       <v-btn flat href="https://vuevixens.threadless.com/" target="_blank">{{ $t("menu.shop") }}</v-btn>
     </v-toolbar-items>
     <v-toolbar-items>
-      <v-menu offset-y left>
+      <v-menu offset-y left dark transition="slide-x-transition">
         <v-btn
           slot="activator"
           light
@@ -25,19 +25,19 @@
           <span class="flag-icon" :class="currentLocale.flag"></span>
           &nbsp;{{currentLocale.language}}
         </v-btn>
-        <v-list>
+        <v-list class="secondary">
           <v-list-tile
             @click="changeLocale('en')">
             <v-list-tile-title>
               <span class="flag-icon flag-icon-gb"></span>
-              English
+              {{ $t("languages.en") }}
             </v-list-tile-title>
           </v-list-tile>
           <v-list-tile
             @click="changeLocale('es')">
             <v-list-tile-title>
               <span class="flag-icon flag-icon-es"></span>
-              Spanish
+              {{ $t("languages.es") }}
             </v-list-tile-title>
           </v-list-tile>
         </v-list>

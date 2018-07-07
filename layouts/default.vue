@@ -6,7 +6,7 @@
         <nuxt/>
     </v-content>
     <v-footer color="secondary" app>
-      <span class="white--text">&copy; 2017</span>
+      <span class="white--text"></span>
     </v-footer>
   </v-app>
 </template>
@@ -21,17 +21,19 @@
     },
     data() {
       return {
-        showDrawer: false
+        showDrawer: false,
+        slug: 'home',
+        story: {},
       }
     },
     created() {
       this.$bus.$on('changeLocale', locale =>  this.$i18n.locale = locale )
     },
     methods: {
-      toggleDrawer() {
+      toggleDrawer(event) {
         this.showDrawer = event;
       }
-    }
+    },
   }
 </script>
 
