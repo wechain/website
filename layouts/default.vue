@@ -1,11 +1,11 @@
 <template>
   <v-app>
-    <VVDrawer :showDrawer="showDrawer" @toggleDrawer="toggleDrawer($event)" />
-    <VVHeader @toggleDrawer="showDrawer = !showDrawer"  />
+    <VVDrawer :showDrawer="showDrawer" @toggleDrawer="toggleDrawer($event)"/>
+    <VVHeader @toggleDrawer="showDrawer = !showDrawer"/>
     <v-content>
-        <nuxt/>
+      <nuxt/>
     </v-content>
-    <VVFooter />
+    <VVFooter/>
   </v-app>
 </template>
 
@@ -13,6 +13,7 @@
   import VVHeader from '../components/Header'
   import VVDrawer from '../components/Drawer'
   import VVFooter from '../components/Footer'
+
   export default {
     components: {
       VVHeader,
@@ -26,7 +27,7 @@
       }
     },
     created() {
-      this.$bus.$on('changeLocale', locale =>  this.$i18n.locale = locale )
+      this.$bus.$on('changeLocale', locale => this.$i18n.locale = locale)
     },
     methods: {
       toggleDrawer(event) {
@@ -37,21 +38,21 @@
 </script>
 
 <style lang="scss">
-html {
-  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+  html {
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+  }
 
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-}
+  *, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+  }
 
   .v-toolbar__title.vv-logo {
     display: flex;
@@ -61,6 +62,29 @@ html {
     img {
       max-width: 40px;
       margin-right: 10px;
+    }
+  }
+
+  .vv-heading {
+    font-weight: bold;
+    font-size: 56px;
+    letter-spacing: 1px;
+  }
+  .vv-subheading {
+    font-size: 34px;
+    line-height: 44px;
+  }
+  .font-lato {
+    font-family: 'Lato', sans-serif;
+  }
+
+  @media (max-width: 960px) {
+    .vv-heading {
+      font-size: 26px;
+    }
+    .vv-subheading {
+      font-size: 22px;
+      line-height: 22px;
     }
   }
 </style>

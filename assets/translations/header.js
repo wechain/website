@@ -2,7 +2,7 @@ export default {
   en: {
     menu: {
       about: 'About',
-      upcoming: 'Upcoming Events',
+      upcoming: 'Upcoming',
       sponsors: 'Sponsors',
       team: 'Team',
       gallery: 'Gallery',
@@ -18,7 +18,7 @@ export default {
   es: {
     menu: {
       about: 'Acerca de',
-      upcoming: 'Próximos Eventos',
+      upcoming: 'Próximos',
       sponsors: 'Sponsors',
       team: 'Equipo',
       gallery: 'Galería',
