@@ -9,9 +9,17 @@
             <img class="vv-logo" src="~/assets/images/logo.png" alt="VueVixens logo">
           </v-flex>
           <v-flex xs12 sm12 md7 order-md1>
-            <h1 class="vv-heading font-lato text-xs-center text-md-left">Welcome to Vue Vixens!</h1>
-            <h2 class="vv-subheading font-lato text-xs-center text-md-left">Vue Vixens are foxy people who identify as women and
-              who want to learn Vue.js to make websites and mobile apps</h2>
+            <h1 class="vv-heading font-lato text-xs-center text-md-left">{{$t('heading.title')}}</h1>
+            <h2 class="vv-subheading font-lato text-xs-center text-md-left">
+              {{$t('heading.description')}}
+            </h2>
+            <v-flex class="vv-cta">
+              <v-btn color="accent darken-1">{{$t('heading.workshops')}}</v-btn>
+              <v-btn color="accent darken-1">
+                <img class="vv-patreon-logo hidden-sm-and-down" src="~/assets/images/patreon.png" alt="Patreon logo">
+                {{$t('heading.patreon')}}
+              </v-btn>
+            </v-flex>
           </v-flex>
         </v-layout>
       </v-container>
@@ -21,6 +29,7 @@
 
 <script>
 import storyblok from '../mixins/storyblok'
+import messages from '../assets/translations/home'
 export default {
   mixins: [storyblok],
   data() {
@@ -28,6 +37,9 @@ export default {
       slug: 'home',
     }
   },
+  i18n: {
+    messages
+  }
 }
 </script>
 
@@ -38,12 +50,36 @@ export default {
   .vv-heading {
     padding-bottom: 30px;
   }
+  .vv-cta {
+    padding-top: 30px;
+  }
+  .vv-patreon-logo {
+    max-width: 22px;
+    margin-right: 5px;
+  }
   @media (max-width: 960px) {
     .vv-heading {
-      padding-bottom: 20px;
+      padding-bottom: 15px;
     }
     .vv-logo {
       max-width: 240px;
+    }
+    .vv-cta {
+      padding-top: 10px;
+      text-align: center;
+    }
+  }
+  @media (max-width: 420px) {
+    .vv-heading {
+      padding-bottom: 10px;
+      line-height: 100%;
+    }
+    .vv-logo {
+      max-width: 160px;
+    }
+    .vv-cta {
+      padding-top: 10px;
+      text-align: center;
     }
   }
 </style>

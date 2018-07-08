@@ -8,7 +8,6 @@ export default {
       gallery: 'Gallery',
       library: 'Library',
       shop: 'Shop',
-      workshops: 'Workshops'
     },
     languages: {
       en: 'English',
@@ -24,7 +23,6 @@ export default {
       gallery: 'Galería',
       shop: 'Tienda',
       library: 'Library',
-      workshops: 'Workshops'
     },
     languages: {
       en: 'English',
