@@ -3,7 +3,6 @@ export default {
     menu: {
       about: 'About',
       upcoming: 'Upcoming Events',
-      request: 'Request a Skulk',
       sponsors: 'Sponsors',
       team: 'Team',
       gallery: 'Gallery',
@@ -20,7 +19,6 @@ export default {
     menu: {
       about: 'Acerca de',
       upcoming: 'Próximos Eventos',
-      request: 'Solicita un Skulk',
       sponsors: 'Sponsors',
       team: 'Equipo',
       gallery: 'Galería',

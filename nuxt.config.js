@@ -17,7 +17,11 @@ module.exports = {
       { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#5bbad5' },
       { rel: 'shortcut icon', href: '/icons/favicon.ico' },
       { rel: 'icon', type: 'image/x-icon', href: '/icons/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
+      { rel: 'stylesheet',
+        href:'https://use.fontawesome.com/releases/v5.0.10/css/all.css',
+        integrity: 'sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg',
+        crossorigin: 'anonymous'}
     ]
   },
   plugins: [
@@ -27,7 +31,7 @@ module.exports = {
   ],
   css: [
     '~/assets/css/app.styl',
-    'flag-icon-css/css/flag-icon.min.css'
+    'flag-icon-css/css/flag-icon.min.css',
   ],
   modules: [
     ['@nuxtjs/google-analytics', {

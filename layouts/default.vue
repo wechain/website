@@ -5,19 +5,19 @@
     <v-content>
         <nuxt/>
     </v-content>
-    <v-footer color="secondary" app>
-      <span class="white--text"></span>
-    </v-footer>
+    <VVFooter />
   </v-app>
 </template>
 
 <script>
   import VVHeader from '../components/Header'
   import VVDrawer from '../components/Drawer'
+  import VVFooter from '../components/Footer'
   export default {
     components: {
       VVHeader,
       VVDrawer,
+      VVFooter
     },
     data() {
       return {
