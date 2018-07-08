@@ -3,6 +3,7 @@
     :value="showDrawer"
     @input="$emit('toggleDrawer', $event)"
     app
+    class="secondary darken-2"
     dark>
     <v-list>
       <v-list-tile to="about">

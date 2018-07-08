@@ -1,6 +1,6 @@
 <template>
   <v-footer
-    height="auto" color="secondary">
+    height="auto" color="secondary darken-2">
     <v-layout class="footer-links hidden-sm-and-down" justify-start align-center row wrap>
       <v-btn
         color="white" flat round
