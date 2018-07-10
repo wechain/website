@@ -24,33 +24,28 @@
         </v-layout>
       </v-container>
     </v-parallax>
-    <v-jumbotron :gradient="gradient" src="/images/jumbo.png" height="200px">
-      <v-container fill-height>
-        <v-layout align-center justify-center wrap>
-          <v-flex xs12 text-xs-center>
-            <h2 class="vv-subheading font-lato secondary--text text--darken-2">Upcoming events</h2>
-          </v-flex>
-          <v-layout align-center justify-space-between>
-            <v-flex xs12 md4 text-xs-center>Test</v-flex>
-            <v-flex xs12 md4 text-xs-center>Test</v-flex>
-            <v-flex xs12 md4 text-xs-center>Test</v-flex>
-          </v-layout>
-        </v-layout>
-      </v-container>
-    </v-jumbotron>
+    <VVAnnouncements v-if="announcements.length" :announcements="announcements"/>
   </div>
 </template>
 
 <script>
   import storyblok from '../mixins/storyblok'
   import messages from '../assets/translations/home'
+  import VVAnnouncements from '../components/Announcements'
 
   export default {
     mixins: [storyblok],
+    components: {
+      VVAnnouncements
+    },
     data() {
       return {
         slug: 'home',
-        gradient: 'to top, #fff, rgba(4,30,48, 0.3)'
+      }
+    },
+    computed: {
+      announcements() {
+        return this.story.content.body[0].columns.slice(1, 4)
       }
     },
     i18n: {
@@ -77,9 +72,6 @@
     margin-right: 5px;
   }
 
-  .vv-announcements {
-    width: 100%;
-  }
 
   @media (max-width: 960px) {
     .vv-heading {

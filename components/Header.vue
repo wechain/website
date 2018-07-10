@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar color="secondary darken-2" dark fixed app scroll-off-screen :scroll-threshold="100">
+  <v-toolbar color="secondary darken-2" dark fixed app>
     <v-toolbar-side-icon class="hidden-md-and-up" @click.stop="$emit('toggleDrawer')"></v-toolbar-side-icon>
     <nuxt-link tag="v-toolbar-title" class="vv-logo" to="/">
       <img src="~/assets/images/logo.png" alt="VueVixens Logo">
