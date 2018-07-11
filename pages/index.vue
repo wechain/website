@@ -25,6 +25,17 @@
       </v-container>
     </v-parallax>
     <VVAnnouncements v-if="announcements.length" :announcements="announcements"/>
+    <v-container>
+      <v-layout align-center row wrap justify-space-between>
+        <v-flex xs12 md4>
+          <v-card>
+            <v-card-title>
+              test
+            </v-card-title>
+          </v-card>
+        </v-flex>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 
