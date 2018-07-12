@@ -34,6 +34,7 @@ module.exports = {
   ],
   css: [
     '~/assets/css/app.styl',
+    '~/assets/css/main.scss',
     'flag-icon-css/css/flag-icon.min.css',
   ],
   modules: [

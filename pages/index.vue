@@ -14,8 +14,11 @@
               {{$t('heading.description')}}
             </h2>
             <v-flex class="vv-cta">
-              <v-btn color="accent darken-1">{{$t('heading.workshops')}}</v-btn>
-              <v-btn color="accent darken-1">
+              <v-btn href="https://vuevixens.github.io/docs/workshop/" target="_blank"
+                     color="accent darken-1">{{$t('heading.workshops')}}
+              </v-btn>
+              <v-btn href="https://www.patreon.com/vuevixens/overview" target="_blank"
+                     color="accent darken-1">
                 <img class="vv-patreon-logo hidden-sm-and-down" src="~/assets/images/patreon.png" alt="Patreon logo">
                 {{$t('heading.patreon')}}
               </v-btn>
@@ -95,7 +98,8 @@
     },
     i18n: {
       messages
-    }
+    },
+    transition: 'fade'
   }
 </script>
 

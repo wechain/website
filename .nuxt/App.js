@@ -3,6 +3,8 @@ import NuxtLoading from './components/nuxt-loading.vue'
 
 import '../assets/css/app.styl'
 
+import '../assets/css/main.scss'
+
 import '../node_modules/flag-icon-css/css/flag-icon.min.css'
 
 

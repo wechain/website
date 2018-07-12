@@ -25,7 +25,7 @@
           <span class="flag-icon" :class="currentLocale.flag"></span>
           &nbsp;{{currentLocale.language}}
         </v-btn>
-        <v-list class="secondary">
+        <v-list class="secondary darken-2">
           <v-list-tile
             @click="changeLocale('en')">
             <v-list-tile-title>
