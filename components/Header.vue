@@ -75,3 +75,16 @@
     }
   }
 </script>
+
+<style scoped lang="scss">
+  .vv-logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    cursor: pointer;
+    img {
+      max-width: 40px;
+      margin-right: 10px;
+    }
+  }
+</style>

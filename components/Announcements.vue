@@ -13,7 +13,7 @@
           </v-flex>
         </v-layout>
         <v-flex xs12 text-xs-center>
-          <v-btn color="secondary darken-2" dark>{{$t('cta')}}</v-btn>
+          <v-btn to="/upcoming" color="secondary darken-2" dark>{{$t('cta')}}</v-btn>
         </v-flex>
       </v-layout>
     </v-container>

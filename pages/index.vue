@@ -25,17 +25,51 @@
       </v-container>
     </v-parallax>
     <VVAnnouncements v-if="announcements.length" :announcements="announcements"/>
-    <v-container>
-      <v-layout align-center row wrap justify-space-between>
-        <v-flex xs12 md4>
-          <v-card>
-            <v-card-title>
-              test
-            </v-card-title>
-          </v-card>
-        </v-flex>
-      </v-layout>
-    </v-container>
+    <v-layout class="vv-container">
+      <v-container grid-list-md>
+        <v-layout align-center row wrap justify-space-between>
+          <v-flex xs12 md4>
+            <v-card hover class="vv-card" to="/upcoming">
+              <v-card-media
+                src="/images/fox.jpg"
+                height="250px"
+                class="vv-card-image"
+              ></v-card-media>
+              <v-card-title primary-title>
+                <h3 class="title text-xs-center">{{$t('skulk.title')}}</h3>
+                <p class="vv-card-text">{{$t('skulk.content')}}</p>
+              </v-card-title>
+            </v-card>
+          </v-flex>
+          <v-flex xs12 md4>
+            <v-card hover class="vv-card" to="/about">
+              <v-card-media
+                src="/images/one-student.jpg"
+                height="250px"
+                class="vv-card-image"
+              ></v-card-media>
+              <v-card-title primary-title>
+                <h3 class="title text-xs-center">{{$t('program.title')}}</h3>
+                <p class="vv-card-text">{{$t('program.content')}}</p>
+              </v-card-title>
+            </v-card>
+          </v-flex>
+          <v-flex xs12 md4>
+            <v-card hover class="vv-card" to="/request">
+              <v-card-media
+                src="/images/conference-crowd.jpg"
+                height="250px"
+                class="vv-card-image"
+              ></v-card-media>
+              <v-card-title primary-title>
+                <h3 class="title text-xs-center">{{$t('request.title')}}</h3>
+                <p class="vv-card-text">{{$t('request.content')}}</p>
+              </v-card-title>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-layout>
   </div>
 </template>
 
@@ -65,7 +99,7 @@
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .vv-logo {
     max-width: 100%;
   }
@@ -82,7 +116,6 @@
     max-width: 22px;
     margin-right: 5px;
   }
-
 
   @media (max-width: 960px) {
     .vv-heading {
