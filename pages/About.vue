@@ -54,7 +54,6 @@
   }
 
   p {
-    font-size: 18px;
     padding: 10px 0;
   }
 </style>

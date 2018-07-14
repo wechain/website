@@ -1,6 +1,6 @@
 html {
   font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -49,9 +49,6 @@ html {
   }
 
   cursor: pointer;
-  .vv-card-text {
-    padding-top: 15px;
-  }
 
   .vv-card-image {
     &:before {

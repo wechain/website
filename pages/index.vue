@@ -121,6 +121,10 @@
     margin-right: 5px;
   }
 
+  .vv-card-text {
+    padding-top: 15px;
+  }
+
   @media (max-width: 960px) {
     .vv-heading {
       padding-bottom: 15px;
