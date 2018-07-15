@@ -43,10 +43,6 @@
 </script>
 
 <style scoped>
-  .indexed {
-    z-index: 1;
-  }
-
   .vv-logo {
     width: 100%;
     max-width: 250px;

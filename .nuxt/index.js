@@ -17,6 +17,7 @@ import nuxt_plugin_googleanalytics_46b13d5a from 'nuxt_plugin_googleanalytics_46
 import nuxt_plugin_vuetify_165b1c58 from 'nuxt_plugin_vuetify_165b1c58' // Source: ../plugins/vuetify
 import nuxt_plugin_eventBus_aaeb250a from 'nuxt_plugin_eventBus_aaeb250a' // Source: ../plugins/eventBus.js
 import nuxt_plugin_i18n_1fba523a from 'nuxt_plugin_i18n_1fba523a' // Source: ../plugins/i18n.js
+import nuxt_plugin_vuemoment_732aa8ba from 'nuxt_plugin_vuemoment_732aa8ba' // Source: ../plugins/vue-moment.js
 
 
 // Component: <no-ssr>
@@ -142,6 +143,7 @@ async function createApp (ssrContext) {
   if (typeof nuxt_plugin_vuetify_165b1c58 === 'function') await nuxt_plugin_vuetify_165b1c58(app.context, inject)
   if (typeof nuxt_plugin_eventBus_aaeb250a === 'function') await nuxt_plugin_eventBus_aaeb250a(app.context, inject)
   if (typeof nuxt_plugin_i18n_1fba523a === 'function') await nuxt_plugin_i18n_1fba523a(app.context, inject)
+  if (typeof nuxt_plugin_vuemoment_732aa8ba === 'function') await nuxt_plugin_vuemoment_732aa8ba(app.context, inject)
   
   if (process.browser) { 
     if (typeof nuxt_plugin_googleanalytics_46b13d5a === 'function') await nuxt_plugin_googleanalytics_46b13d5a(app.context, inject)

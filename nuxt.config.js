@@ -30,7 +30,8 @@ module.exports = {
   plugins: [
     '~/plugins/vuetify',
     '~/plugins/eventBus.js',
-    '~/plugins/i18n.js'
+    '~/plugins/i18n.js',
+    '~/plugins/vue-moment.js'
   ],
   css: [
     '~/assets/css/app.styl',

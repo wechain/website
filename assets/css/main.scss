@@ -88,6 +88,10 @@ html {
   }
 }
 
+.indexed {
+  z-index: 1;
+}
+
 @media (max-width: 960px) {
   .vv-heading {
     font-size: 26px;
