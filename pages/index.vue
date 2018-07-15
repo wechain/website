@@ -93,7 +93,7 @@
     },
     computed: {
       announcements() {
-        return this.story.content.body[0].columns.slice(1, 4)
+        return this.story.content.body[0].columns.slice(1, 6)
       }
     },
     i18n: {

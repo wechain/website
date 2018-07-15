@@ -5,7 +5,7 @@
         <v-flex xs12 text-xs-center>
           <h2 class="vv-subheading font-lato secondary--text text--darken-2">{{$t('eventsTitle')}}</h2>
         </v-flex>
-        <v-layout align-center justify-space-between wrap class="vv-announcements">
+        <v-layout align-center justify-space-around wrap class="vv-announcements">
           <v-flex xs12 md4 text-xs-center v-for="item in announcements" :key="item.name">
             <nuxt-link :to="item.url.cached_url" class="vv-link font-weight-bold secondary--text text--darken-2">
               {{item.name}}
