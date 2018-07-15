@@ -48,6 +48,10 @@
     max-width: 250px;
     margin-bottom: 20px;
   }
+  
+  a {
+    text-decoration: none;
+  }
 
   p {
     padding: 10px 0;

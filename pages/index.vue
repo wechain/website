@@ -32,7 +32,7 @@
       <v-container grid-list-md>
         <v-layout align-center row wrap justify-space-between>
           <v-flex xs12 md4>
-            <v-card hover class="vv-card" to="/upcoming">
+            <v-card hover class="vv-card" to="/upcoming" flat nuxt>
               <v-card-media
                 src="/images/fox.jpg"
                 height="250px"
@@ -45,7 +45,7 @@
             </v-card>
           </v-flex>
           <v-flex xs12 md4>
-            <v-card hover class="vv-card" to="/about">
+            <v-card hover class="vv-card" to="/about" flat nuxt>
               <v-card-media
                 src="/images/one-student.jpg"
                 height="250px"
@@ -58,7 +58,7 @@
             </v-card>
           </v-flex>
           <v-flex xs12 md4>
-            <v-card hover class="vv-card" to="/request">
+            <v-card hover class="vv-card" to="/request" flat nuxt>
               <v-card-media
                 src="/images/conference-crowd.jpg"
                 height="250px"

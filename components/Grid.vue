@@ -2,7 +2,7 @@
   <v-container grid-list-md>
     <v-layout wrap>
       <v-flex xs6 sm4 md3 v-for="event in events" :key="event.name">
-        <v-card class="vv-card" hover :to="event.link.cached_url">
+        <v-card class="vv-card" hover :to="event.link.cached_url" nuxt>
           <v-card-media
             class="white--text vv-card-image"
             height="200px"
