@@ -34,7 +34,7 @@
           <v-flex xs12 md4>
             <v-card hover class="vv-card" to="/upcoming" flat nuxt>
               <v-card-media
-                src="/images/fox.jpg"
+                src="/images/join_skulk.svg"
                 height="250px"
                 class="vv-card-image"
               ></v-card-media>
@@ -47,7 +47,7 @@
           <v-flex xs12 md4>
             <v-card hover class="vv-card" to="/about" flat nuxt>
               <v-card-media
-                src="/images/one-student.jpg"
+                src="/images/learn-more.svg"
                 height="250px"
                 class="vv-card-image"
               ></v-card-media>
@@ -60,7 +60,7 @@
           <v-flex xs12 md4>
             <v-card hover class="vv-card" to="/request" flat nuxt>
               <v-card-media
-                src="/images/conference-crowd.jpg"
+                src="/images/conference.svg"
                 height="250px"
                 class="vv-card-image"
               ></v-card-media>
@@ -93,7 +93,7 @@
     },
     computed: {
       announcements() {
-        return this.story.content.body[0].columns.slice(1, 6)
+        return this.story.content.body[0].columns.slice(1, 4)
       }
     },
     i18n: {
