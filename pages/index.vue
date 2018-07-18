@@ -17,11 +17,6 @@
               <v-btn href="https://vuevixens.github.io/docs/workshop/" target="_blank"
                      color="accent darken-1">{{$t('heading.workshops')}}
               </v-btn>
-              <v-btn href="https://www.patreon.com/vuevixens/overview" target="_blank"
-                     color="accent darken-1">
-                <img class="vv-patreon-logo hidden-sm-and-down" src="~/assets/images/patreon.png" alt="Patreon logo">
-                {{$t('heading.patreon')}}
-              </v-btn>
             </v-flex>
           </v-flex>
         </v-layout>

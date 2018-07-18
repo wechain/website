@@ -92,6 +92,10 @@ html {
   z-index: 1;
 }
 
+img {
+  max-width: 100%;
+}
+
 @media (max-width: 960px) {
   .vv-heading {
     font-size: 26px;
