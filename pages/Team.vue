@@ -11,6 +11,17 @@
               <v-card-media height="400px" :src="member.img"></v-card-media>
               <v-card-title justify-center>
                 <h3 class="d-block text-xs-center">{{member.name}}</h3>
+                <h4 class="d-block text-xs-center">{{member.title}}</h4>
+                <p class="text-xs-center">
+                  {{member.bio}}
+                </p>
+                  <a class="text-xs-center"
+                     v-if="member.twitter" :href="'http://www.twitter.com/' + member.twitter">
+                    <i class="fab fa-twitter"></i> @{{member.twitter}}
+                  </a>
+                  <a class="text-xs-center" v-if="member.website.url" :href="member.website.url">
+                    <i class="fas fa-link"></i> {{member.website.url}}
+                  </a>
               </v-card-title>
             </v-card>
           </v-flex>
@@ -27,6 +38,17 @@
               <v-card-media height="400px" :src="member.img"></v-card-media>
               <v-card-title justify-center>
                 <h3 class="d-block text-xs-center">{{member.name}}</h3>
+                <h4 class="d-block text-xs-center">{{member.title}}</h4>
+                <p class="text-xs-center">
+                  {{member.bio}}
+                </p>
+                <a class="text-xs-center"
+                   v-if="member.twitter" :href="'http://www.twitter.com/' + member.twitter">
+                  <i class="fab fa-twitter"></i> @{{member.twitter}}
+                </a>
+                <a class="text-xs-center" v-if="member.website.url" :href="member.website.url">
+                  <i class="fas fa-link"></i> {{member.website.url}}
+                </a>
               </v-card-title>
             </v-card>
           </v-flex>
@@ -43,6 +65,17 @@
               <v-card-media height="400px" :src="member.img"></v-card-media>
               <v-card-title justify-center>
                 <h3 class="d-block text-xs-center">{{member.name}}</h3>
+                <h4 class="d-block text-xs-center">{{member.title}}</h4>
+                <p class="text-xs-center">
+                  {{member.bio}}
+                </p>
+                <a class="text-xs-center"
+                   v-if="member.twitter" :href="'http://www.twitter.com/' + member.twitter">
+                  <i class="fab fa-twitter"></i> @{{member.twitter}}
+                </a>
+                <a class="text-xs-center" v-if="member.website.url" :href="member.website.url">
+                  <i class="fas fa-link"></i> {{member.website.url}}
+                </a>
               </v-card-title>
             </v-card>
           </v-flex>
@@ -69,8 +102,20 @@
 </script>
 
 <style scoped>
-  h3 {
+  h3, h4 {
     width: 100%;
     padding-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+  }
+  a {
+    width: 100%;
+    font-size: 16px;
+    text-decoration: none;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 </style>
