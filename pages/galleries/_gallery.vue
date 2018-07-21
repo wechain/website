@@ -59,10 +59,6 @@
 </script>
 
 <style scoped>
-  .container.indexed {
-    margin: 0 auto;
-  }
-
   .v-carousel {
     height: 650px;
   }

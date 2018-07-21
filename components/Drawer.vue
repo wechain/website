@@ -4,6 +4,7 @@
     @input="$emit('toggleDrawer', $event)"
     app
     class="secondary darken-2"
+    static
     dark>
     <v-list>
       <v-list-tile to="about">

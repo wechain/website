@@ -96,6 +96,14 @@ img {
   max-width: 100%;
 }
 
+.container.indexed {
+  margin: 0 auto;
+}
+
+.vv-content {
+  padding-top: 30px;
+}
+
 @media (max-width: 960px) {
   .vv-heading {
     font-size: 26px;

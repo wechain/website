@@ -29,13 +29,3 @@
     }
   }
 </script>
-
-<style scoped lang="scss">
-  .vv-content {
-    padding-top: 30px;
-  }
-
-  .container.indexed {
-    margin: 0 auto;
-  }
-</style>
