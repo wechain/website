@@ -22,7 +22,7 @@
     },
     data() {
       return {
-        showDrawer: null,
+        showDrawer: false,
         story: {},
       }
     },

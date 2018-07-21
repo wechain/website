@@ -1,10 +1,10 @@
 <template>
   <v-navigation-drawer
+    disable-resize-watcher
     :value="showDrawer"
     @input="$emit('toggleDrawer', $event)"
     app
     class="secondary darken-2"
-    static
     dark>
     <v-list>
       <v-list-tile to="about">
