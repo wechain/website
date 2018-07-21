@@ -23,6 +23,7 @@
 
 <script>
   import storyblok from '../mixins/storyblok'
+  import messages from '../assets/translations/team'
   export default {
     mixins: [storyblok],
     data() {
