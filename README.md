@@ -1,6 +1,6 @@
 # Vue Vixens
 
-> Workshops for Foxy People
+> Workshops for Foxy People 🦊
 
 ## Build Setup
 
