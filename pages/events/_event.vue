@@ -1,15 +1,16 @@
 <template>
   <v-layout class="vv-container" fill-height>
-    <v-container class="indexed">
-      <v-flex xs12 class="text-xs-center" v-if="currentEvent">
+    <v-container class="indexed" fill-height>
         <v-card height="100%">
           <img :src="currentEvent.image" :alt="`${currentEvent.title} image`">
           <v-card-title>
             <h3 class="vv-subheading font-lato text-xs-center">{{ currentEvent.title }}</h3>
             <div class="card-meta">
               <p v-if="currentEvent.conference.url">
-                <i class="fas fa-link"></i>
-                <a :href="currentEvent.conference.url">{{currentEvent.conference.url}}</a>
+                <a :href="currentEvent.conference.url">
+                  <i class="fas fa-link grey--text"></i>
+                  {{currentEvent.conference.url}}
+                </a>
               </p>
               <p v-if="currentEvent.date">
                 <i class="far fa-calendar-alt"></i>
@@ -30,7 +31,6 @@
             </v-btn>
           </v-card-actions>
         </v-card>
-      </v-flex>
     </v-container>
   </v-layout>
 </template>
@@ -72,8 +72,13 @@
     color: #909090;
     padding: 20px 0;
     text-align: left;
+    width: 100%;
     a {
+      width: 100%;
       text-decoration: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     i {
