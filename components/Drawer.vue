@@ -7,22 +7,22 @@
     class="secondary darken-2"
     dark>
     <v-list>
-      <v-list-tile to="about">
+      <v-list-tile to="/about">
         <v-list-tile-title class="subheading">{{ $t("menu.about") }}</v-list-tile-title>
       </v-list-tile>
-      <v-list-tile to="upcoming">
+      <v-list-tile to="/upcoming">
         <v-list-tile-title class="subheading">{{ $t("menu.upcoming") }}</v-list-tile-title>
       </v-list-tile>
-      <v-list-tile to="sponsors">
+      <v-list-tile to="/sponsors">
         <v-list-tile-title class="subheading">{{ $t("menu.sponsors") }}</v-list-tile-title>
       </v-list-tile>
-      <v-list-tile to="team">
+      <v-list-tile to="/team">
         <v-list-tile-title class="subheading">{{ $t("menu.team") }}</v-list-tile-title>
       </v-list-tile>
-      <v-list-tile to="gallery">
+      <v-list-tile to="/gallery">
         <v-list-tile-title class="subheading">{{ $t("menu.gallery") }}</v-list-tile-title>
       </v-list-tile>
-      <v-list-tile to="library">
+      <v-list-tile to="/library">
         <v-list-tile-title class="subheading">{{ $t("menu.library") }}</v-list-tile-title>
       </v-list-tile>
       <v-list-tile href="https://vuevixens.threadless.com/" target="_blank">
