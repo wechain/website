@@ -75,6 +75,7 @@
     width: 100%;
     a {
       width: 100%;
+      display: block;
       text-decoration: none;
       white-space: nowrap;
       overflow: hidden;
