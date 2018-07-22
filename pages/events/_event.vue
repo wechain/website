@@ -1,42 +1,43 @@
 <template>
   <v-layout class="vv-container" fill-height>
     <v-container class="indexed" fill-height>
-        <v-card height="100%">
-          <img :src="currentEvent.image" :alt="`${currentEvent.title} image`">
-          <v-card-title>
-            <h3 class="vv-subheading font-lato text-xs-center">{{ currentEvent.title }}</h3>
-            <div class="card-meta">
-              <p v-if="currentEvent.conference.url">
-                <a :href="currentEvent.conference.url">
-                  <i class="fas fa-link grey--text"></i>
-                  {{currentEvent.conference.url}}
-                </a>
-              </p>
-              <p v-if="currentEvent.date">
-                <i class="far fa-calendar-alt"></i>
-                {{currentEvent.date| moment('MMM Do, YYYY')}}
-              </p>
-              <p v-if="currentEvent.location">
-                <i class="fas fa-map-marker-alt"></i>
-                {{currentEvent.location}}
-              </p>
-            </div>
-            <p class="text-xs-left">{{currentEvent.description}}</p>
-          </v-card-title>
-          <v-card-actions class="card-buttons" justify-center>
-            <v-btn color="secondary darken-2" dark v-for="action in currentEvent.actions"
-                   :key="action.text"
-                   :href="action.url.url" target="_blank">
-              {{action.text}}
-            </v-btn>
-          </v-card-actions>
-        </v-card>
+      <v-card height="100%" v-if="currentEvent">
+        <img :src="currentEvent.image" :alt="`${currentEvent.title} image`">
+        <v-card-title>
+          <h3 class="vv-subheading font-lato text-xs-center">Title</h3>
+          <div class="card-meta">
+            <p v-if="currentEvent.conference.url">
+              <a :href="currentEvent.conference.url">
+                <i class="fas fa-link grey--text"></i>
+                {{currentEvent.conference.url}}
+              </a>
+            </p>
+            <p v-if="currentEvent.date">
+              <i class="far fa-calendar-alt"></i>
+              {{currentEvent.date| moment('MMM Do, YYYY')}}
+            </p>
+            <p v-if="currentEvent.location">
+              <i class="fas fa-map-marker-alt"></i>
+              {{currentEvent.location}}
+            </p>
+          </div>
+          <p class="text-xs-left">{{currentEvent.description}}</p>
+        </v-card-title>
+        <v-card-actions class="card-buttons" justify-center>
+          <v-btn color="secondary darken-2" dark v-for="action in currentEvent.actions"
+                 :key="action.text"
+                 :href="action.url.url" target="_blank">
+            {{action.text}}
+          </v-btn>
+        </v-card-actions>
+      </v-card>
     </v-container>
   </v-layout>
 </template>
 
 <script>
   import storyblok from '../../mixins/storyblok'
+
   export default {
     mixins: [storyblok],
     computed: {
