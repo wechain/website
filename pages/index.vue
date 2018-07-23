@@ -17,6 +17,9 @@
               <v-btn href="https://vuevixens.github.io/docs/workshop/" target="_blank"
                      color="accent darken-1">{{$t('heading.workshops')}}
               </v-btn>
+              <v-btn href="https://dev.to/vuevixens/" target="_blank"
+                     color="accent darken-1">Blog
+              </v-btn>
             </v-flex>
           </v-flex>
         </v-layout>

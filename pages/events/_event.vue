@@ -9,7 +9,7 @@
           <h3 class="vv-subheading font-lato text-xs-center">{{currentEvent.title}}</h3>
           <div class="card-meta">
             <p v-if="currentEvent.conference.url">
-              <a :href="currentEvent.conference.url">
+              <a :href="currentEvent.conference.url" target="_blank">
                 <i class="fas fa-link secondary--text text--lighten-2"></i>
                 {{currentEvent.conference.url}}
               </a>
