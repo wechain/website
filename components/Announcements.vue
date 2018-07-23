@@ -1,27 +1,19 @@
 <template>
-  <v-jumbotron :gradient="gradient" src="/images/jumbo.png" height="350px" >
+  <div class="vv-announcements">
     <v-container fill-height>
       <v-layout align-center justify-center wrap>
         <v-flex xs12 text-xs-center>
           <h2 class="vv-subheading font-lato secondary--text text--darken-2">{{$t('eventsTitle')}}</h2>
         </v-flex>
-        <v-layout align-center justify-space-around wrap class="vv-announcements">
-          <v-flex xs12 md4 text-xs-center v-for="item in announcements" :key="item.name">
-            <nuxt-link :to="item.url.cached_url" class="vv-link font-weight-bold secondary--text text--darken-2">
-              {{item.name}}
-            </nuxt-link>
-          </v-flex>
-        </v-layout>
-        <v-flex xs12 text-xs-center>
-          <v-btn to="/upcoming" color="secondary darken-2" dark>{{$t('cta')}}</v-btn>
-        </v-flex>
+        <VVGrid :events="announcements" />
       </v-layout>
     </v-container>
-  </v-jumbotron>
+  </div>
 </template>
 
 <script>
   import messages from '../assets/translations/announcements'
+  import VVGrid from '../components/Grid'
   export default {
     props: ['announcements'],
     data() {
@@ -29,15 +21,29 @@
         gradient: 'to top, #fff, rgba(4,30,48, 0.3)'
       }
     },
+    components: {
+      VVGrid,
+    },
     i18n: {
       messages
     }
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .vv-announcements {
-    padding: 20px 0;
+    background: url('../assets/images/jumbo.png');
+    background-size: contain;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(to top, #fff, #fff 27%, rgba(4,30,48, 0.3));
+    }
   }
 
   .vv-link {
@@ -46,6 +52,8 @@
   }
 
   .vv-subheading {
+    position: relative;
+    z-index: 3;
     text-shadow: 2px 2px 0px #bababa;
   }
 

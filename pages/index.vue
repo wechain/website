@@ -46,7 +46,7 @@
     },
     computed: {
       announcements() {
-        return this.story.content.body[0].columns
+        return this.story.content.body
       }
     },
     i18n: {

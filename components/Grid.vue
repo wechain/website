@@ -1,7 +1,7 @@
 <template>
-  <v-container grid-list-md>
+  <v-container grid-list-lg>
     <v-layout wrap>
-      <v-flex xs6 sm4 md3 v-for="event in events" :key="event.name">
+      <v-flex xs12 sm4 md3 v-for="event in events" :key="event.name">
         <v-card class="vv-card" hover :to="event.link.cached_url" nuxt>
           <v-card-media
             class="white--text vv-card-image"
@@ -58,6 +58,7 @@
     .event-name {
       z-index: 2;
       flex-wrap: wrap;
+      text-align: center;
     }
   }
 </style>

@@ -17,7 +17,7 @@ export default {
   },
   async asyncData (context) {
     let version = context.query._storyblok || context.isDev ? 'draft' : 'published';
-    const path = context.route.path === '/' ? 'home' : context.route.path;
+    const path = context.route.path === '/' ? 'upcoming' : context.route.path;
     const response = await context.app.$storyapi.get(`cdn/stories/${path}`, { version });
     return response.data;
   },
