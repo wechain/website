@@ -53,4 +53,8 @@
     padding-bottom: 30px;
     text-decoration: none;
   }
+
+  img {
+    max-width: 100%;
+  }
 </style>
