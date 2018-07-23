@@ -8,7 +8,6 @@
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
       <v-btn flat to="/about" nuxt>{{ $t("menu.about") }}</v-btn>
-      <v-btn flat to="/upcoming" nuxt>{{ $t("menu.upcoming") }}</v-btn>
       <v-btn flat to="/sponsors" nuxt>{{ $t("menu.sponsors") }}</v-btn>
       <v-btn flat to="/team" nuxt>{{ $t("menu.team") }}</v-btn>
       <v-btn flat to="/gallery" nuxt>{{ $t("menu.gallery") }}</v-btn>
