@@ -23,8 +23,8 @@
           </div>
           <p class="text-xs-left">{{currentEvent.description}}</p>
         </v-card-title>
-        <v-card-actions class="card-buttons" justify-center>
-          <v-btn color="secondary darken-2" dark v-for="action in currentEvent.actions"
+        <v-card-actions class="card-buttons">
+          <v-btn color="card-button secondary darken-2" dark v-for="action in currentEvent.actions"
                  :key="action.text"
                  :href="action.url.url" target="_blank">
             {{action.text}}
@@ -94,5 +94,19 @@
   .card-buttons {
     padding-bottom: 50px;
     justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 400px) {
+    .card-button {
+      display: block;
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 5px;
+    }
+
+    .v-card__actions .v-btn + .v-btn.card-button {
+      margin-left: 0;
+    }
   }
 </style>

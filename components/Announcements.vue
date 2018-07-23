@@ -1,5 +1,5 @@
 <template>
-  <v-jumbotron :gradient="gradient" src="/images/jumbo.png" height="250px" >
+  <v-jumbotron :gradient="gradient" src="/images/jumbo.png" height="350px" >
     <v-container fill-height>
       <v-layout align-center justify-center wrap>
         <v-flex xs12 text-xs-center>
