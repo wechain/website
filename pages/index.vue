@@ -23,51 +23,6 @@
       </v-container>
     </v-parallax>
     <VVAnnouncements v-if="announcements.length" :announcements="announcements"/>
-    <v-layout class="vv-container">
-      <v-container grid-list-md>
-        <v-layout align-center row wrap justify-space-between>
-          <v-flex xs12 md4>
-            <v-card hover class="vv-card" to="/upcoming" flat nuxt>
-              <v-card-media
-                src="/images/join_skulk.svg"
-                height="250px"
-                class="vv-card-image"
-              ></v-card-media>
-              <v-card-title primary-title>
-                <h3 class="title text-xs-center">{{$t('skulk.title')}}</h3>
-                <p class="vv-card-text">{{$t('skulk.content')}}</p>
-              </v-card-title>
-            </v-card>
-          </v-flex>
-          <v-flex xs12 md4>
-            <v-card hover class="vv-card" to="/about" flat nuxt>
-              <v-card-media
-                src="/images/learn-more.svg"
-                height="250px"
-                class="vv-card-image"
-              ></v-card-media>
-              <v-card-title primary-title>
-                <h3 class="title text-xs-center">{{$t('program.title')}}</h3>
-                <p class="vv-card-text">{{$t('program.content')}}</p>
-              </v-card-title>
-            </v-card>
-          </v-flex>
-          <v-flex xs12 md4>
-            <v-card hover class="vv-card" to="/request" flat nuxt>
-              <v-card-media
-                src="/images/conference.svg"
-                height="250px"
-                class="vv-card-image"
-              ></v-card-media>
-              <v-card-title primary-title>
-                <h3 class="title text-xs-center">{{$t('request.title')}}</h3>
-                <p class="vv-card-text">{{$t('request.content')}}</p>
-              </v-card-title>
-            </v-card>
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </v-layout>
   </div>
 </template>
 
@@ -88,7 +43,7 @@
     },
     computed: {
       announcements() {
-        return this.story.content.body[0].columns.slice(1, 4)
+        return this.story.content.body[0].columns
       }
     },
     i18n: {

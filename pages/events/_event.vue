@@ -4,7 +4,7 @@
       <v-card height="100%" v-if="currentEvent">
         <img :src="currentEvent.image" :alt="`${currentEvent.title} image`">
         <v-card-title>
-          <h3 class="vv-subheading font-lato text-xs-center">Title</h3>
+          <h3 class="vv-subheading font-lato text-xs-center">{{currentEvent.title}}</h3>
           <div class="card-meta">
             <p v-if="currentEvent.conference.url">
               <a :href="currentEvent.conference.url">
