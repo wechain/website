@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar color="secondary darken-2" dark fixed app>
+  <v-toolbar class="vv-toolbar" color="secondary darken-2" dark fixed app>
     <v-toolbar-side-icon class="hidden-md-and-up" @click.stop="$emit('toggleDrawer')"></v-toolbar-side-icon>
     <nuxt-link tag="v-toolbar-title" class="vv-logo" to="/">
       <img src="~/assets/images/logo.png" alt="VueVixens Logo">
@@ -8,7 +8,6 @@
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
       <v-btn flat to="/about" nuxt>{{ $t("menu.about") }}</v-btn>
-      <v-btn flat to="/upcoming" nuxt>{{ $t("menu.upcoming") }}</v-btn>
       <v-btn flat to="/sponsors" nuxt>{{ $t("menu.sponsors") }}</v-btn>
       <v-btn flat to="/team" nuxt>{{ $t("menu.team") }}</v-btn>
       <v-btn flat to="/gallery" nuxt>{{ $t("menu.gallery") }}</v-btn>
@@ -86,5 +85,9 @@
       max-width: 40px;
       margin-right: 10px;
     }
+  }
+
+  .vv-toolbar {
+    z-index: 5;
   }
 </style>
