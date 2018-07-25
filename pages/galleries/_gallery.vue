@@ -63,6 +63,10 @@
     height: 650px;
   }
 
+  .v-jumbotron__image {
+    max-width: 100%;
+  }
+
   @media (max-width: 960px) {
     .v-carousel {
       height: 480px;
