@@ -15,7 +15,7 @@
         <v-container grid-list-lg>
           <v-layout wrap v-if="!!story.content">
             <v-flex xs6 md3 v-for="(item, index) in story.content.body" :key="item.img">
-              <v-card flat @click.native="setCarouselStart(index)">
+              <v-card class="gallery-image" flat @click.native="setCarouselStart(index)">
                 <v-card-media :src="item.img" height="200px"></v-card-media>
               </v-card>
             </v-flex>
@@ -64,6 +64,10 @@
     .v-jumbotron__image {
       max-width: 100%;
     }
+  }
+
+  .gallery-image {
+    cursor: pointer;
   }
 
 
