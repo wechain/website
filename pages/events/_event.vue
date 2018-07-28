@@ -38,92 +38,87 @@
 </template>
 
 <script>
-  import storyblok from '../../mixins/storyblok'
+import storyblok from '../../mixins/storyblok';
 
-  export default {
-    mixins: [storyblok],
-    computed: {
-      currentEvent() {
-        return this.story.content
-      },
-      slug() {
-        return `events/${this.$route.params.event}`;
-      }
-    },
+export default {
+  mixins: [storyblok],
+  computed: {
+    currentEvent() {
+      return this.story.content;
+    }
   }
+};
 </script>
 
 <style scoped lang="scss">
-  img {
+img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.event-image {
+  max-height: 400px;
+}
+
+.vv-container {
+  padding-bottom: 0;
+}
+
+.container.indexed {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.event-wrapper {
+  padding: 0 15px;
+}
+
+h3 {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.card-meta {
+  padding: 20px 0;
+  text-align: left;
+  width: 100%;
+  a {
     width: 100%;
-    max-height: 400px;
-    object-fit: cover;
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  .event-image {
-    max-height: 400px;
+  i {
+    padding-right: 5px;
   }
-
-  .vv-container {
-    padding-bottom: 0;
+  p {
+    margin: 0;
   }
+}
 
-  .container.indexed {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+.card-buttons {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  .event-wrapper {
-    padding: 0 15px;
-  }
-
-  h3 {
+@media (max-width: 400px) {
+  .card-button {
+    display: block;
     width: 100%;
-    padding-top: 20px;
+    margin-left: 0;
+    margin-bottom: 5px;
   }
 
-  .card-meta {
-    padding: 20px 0;
-    text-align: left;
-    width: 100%;
-    a {
-      width: 100%;
-      display: block;
-      text-decoration: none;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    i {
-      padding-right: 5px;
-    }
-    p {
-      margin: 0;
-    }
+  .v-card__actions .v-btn + .v-btn.card-button {
+    margin-left: 0;
   }
-
-  .card-buttons {
-    width: 100%;
-    text-align: center;
-    padding-bottom: 50px;
-    padding-top: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  @media (max-width: 400px) {
-    .card-button {
-      display: block;
-      width: 100%;
-      margin-left: 0;
-      margin-bottom: 5px;
-    }
-
-
-
-    .v-card__actions .v-btn + .v-btn.card-button {
-      margin-left: 0;
-    }
-  }
+}
 </style>

@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-lg>
     <v-layout wrap>
-      <v-flex xs12 sm4 md3 v-for="event in events" :key="event.name">
+      <v-flex xs12 sm4 md3 v-for="(event, index) in events" :key="`${event.name}-${index}`">
         <v-card class="vv-card" hover :to="event.link.cached_url" nuxt>
           <v-card-media
             class="white--text vv-card-image"
@@ -25,40 +25,41 @@
 </template>
 
 <script>
-  export default {
-    props: ['events']
-  }
+export default {
+  props: ['events']
+};
 </script>
 
 <style scoped lang="scss">
-  .vv-card {
+.vv-card {
+  &:before {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    transition: 0.3s opacity;
+  }
+
+  &:hover {
     &:before {
-      position: absolute;
-      content: '';
-      z-index: 1;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, .6);
-      opacity: 1;
-      transition: 0.3s opacity;
-    }
-
-    &:hover {
-      &:before {
-        opacity: 0.4;
-      }
-    }
-
-    .headline, .subheading {
-      width: 100%;
-    }
-
-    .event-name {
-      z-index: 2;
-      flex-wrap: wrap;
-      text-align: center;
+      opacity: 0.4;
     }
   }
+
+  .headline,
+  .subheading {
+    width: 100%;
+  }
+
+  .event-name {
+    z-index: 2;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
 </style>
