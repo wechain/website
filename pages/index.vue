@@ -30,82 +30,77 @@
 </template>
 
 <script>
-  import storyblok from '../mixins/storyblok'
-  import messages from '../assets/translations/home'
-  import VVAnnouncements from '../components/Announcements'
+import storyblok from '../mixins/storyblok';
+import messages from '../assets/translations/home';
+import VVAnnouncements from '../components/Announcements';
 
-  export default {
-    mixins: [storyblok],
-    components: {
-      VVAnnouncements
-    },
-    data() {
-      return {
-        slug: 'home',
-      }
-    },
-    computed: {
-      announcements() {
-        return this.story.content.body
-      }
-    },
-    i18n: {
-      messages
-    },
-    transition: 'fade'
-  }
+export default {
+  mixins: [storyblok],
+  components: {
+    VVAnnouncements
+  },
+  computed: {
+    announcements() {
+      return this.story.content.body;
+    }
+  },
+  i18n: {
+    messages
+  },
+  transition: 'fade'
+};
 </script>
 
 <style scoped lang="scss">
-  .vv-logo {
-    max-width: 100%;
+.vv-logo {
+  max-width: 100%;
+}
+
+.vv-heading {
+  padding-bottom: 30px;
+}
+
+.vv-cta {
+  padding-top: 30px;
+}
+
+.vv-patreon-logo {
+  max-width: 22px;
+  margin-right: 5px;
+}
+
+.vv-card-text {
+  padding-top: 15px;
+}
+
+@media (max-width: 960px) {
+  .vv-heading {
+    padding-bottom: 15px;
   }
 
-  .vv-heading {
-    padding-bottom: 30px;
+  .vv-logo {
+    max-width: 240px;
   }
 
   .vv-cta {
-    padding-top: 30px;
+    padding-top: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .vv-heading {
+    padding-bottom: 10px;
+    line-height: 100%;
   }
 
-  .vv-patreon-logo {
-    max-width: 22px;
-    margin-right: 5px;
+  .vv-logo {
+    max-width: 160px;
   }
 
-  .vv-card-text {
-    padding-top: 15px;
+  .vv-cta {
+    padding-top: 10px;
+    text-align: center;
   }
-
-  @media (max-width: 960px) {
-    .vv-heading {
-      padding-bottom: 15px;
-    }
-
-    .vv-logo {
-      max-width: 240px;
-    }
-
-    .vv-cta {
-      padding-top: 10px;
-      text-align: center;
-    }
-  }
-
-  @media (max-width: 420px) {
-    .vv-heading {
-      padding-bottom: 10px;
-      line-height: 100%;
-    }
-
-    .vv-logo {
-      max-width: 160px;
-    }
-
-    .vv-cta {
-      padding-top: 10px;
-      text-align: center;
-    }
-  }
+}
 </style>

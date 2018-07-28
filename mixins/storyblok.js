@@ -2,36 +2,43 @@ export default {
   data() {
     return {
       story: {},
-      loading: false,
-    }
+      loading: false
+    };
   },
   methods: {
     async loadStory(locale) {
-      const path = locale === 'en' ? `cdn/stories/${this.slug}` : `cdn/stories/${locale}/${this.slug}`;
+      const slug = this.$route.path === '/' ? 'upcoming' : this.$route.path;
+      const path =
+        locale === 'en'
+          ? `cdn/stories/${slug}`
+          : `cdn/stories/${locale}/${slug}`;
       const response = await this.$storyapi.get(path, { version: 'published' });
       this.story = response.data.story;
     },
     listener(locale) {
-      this.loadStory(locale)
-    },
+      this.loadStory(locale);
+    }
   },
-  async asyncData (context) {
-    let version = context.query._storyblok || context.isDev ? 'draft' : 'published';
+  async asyncData(context) {
+    let version =
+      context.query._storyblok || context.isDev ? 'draft' : 'published';
     const path = context.route.path === '/' ? 'upcoming' : context.route.path;
-    const response = await context.app.$storyapi.get(`cdn/stories/${path}`, { version });
+    const response = await context.app.$storyapi.get(`cdn/stories/${path}`, {
+      version
+    });
     return response.data;
   },
-  mounted () {
+  mounted() {
     this.$storyblok.init();
     this.$storyblok.on('change', () => {
-      location.reload(true)
+      location.reload(true);
     });
     this.$storyblok.on('published', () => {
-      location.reload(true)
+      location.reload(true);
     });
     this.$bus.$on('changeLocale', this.listener);
   },
   beforeDestroy() {
     this.$bus.$off('changeLocale', this.listener);
   }
-}
+};

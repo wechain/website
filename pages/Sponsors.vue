@@ -28,34 +28,29 @@
 </template>
 
 <script>
-  import storyblok from '../mixins/storyblok'
-  import messages from '../assets/translations/sponsors'
-  export default {
-    mixins: [storyblok],
-    data() {
-      return {
-        slug: 'sponsors',
-      }
-    },
-    i18n: {
-      messages
-    }
+import storyblok from '../mixins/storyblok';
+import messages from '../assets/translations/sponsors';
+export default {
+  mixins: [storyblok],
+  i18n: {
+    messages
   }
+};
 </script>
 
 <style scoped>
-  h3 {
-    width: 100%;
-    padding-bottom: 10px;
-  }
+h3 {
+  width: 100%;
+  padding-bottom: 10px;
+}
 
-  a {
-    padding-bottom: 30px;
-    text-decoration: none;
-  }
+a {
+  padding-bottom: 30px;
+  text-decoration: none;
+}
 
-  img {
-    width: 100%;
-    max-width: 100%;
-  }
+img {
+  width: 100%;
+  max-width: 100%;
+}
 </style>

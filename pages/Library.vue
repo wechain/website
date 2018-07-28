@@ -14,23 +14,19 @@
 </template>
 
 <script>
-  import storyblok from '../mixins/storyblok'
-  export default {
-    mixins: [storyblok],
-    data() {
-      return {
-        slug: 'library',
-      }
-    },
-  }
+import storyblok from '../mixins/storyblok';
+export default {
+  mixins: [storyblok]
+};
 </script>
 
 <style scoped>
-  .article-card {
-    margin-bottom: 15px;
-  }
+.article-card {
+  margin-bottom: 15px;
+}
 
-  h3, p {
-    width: 100%;
-  }
+h3,
+p {
+  width: 100%;
+}
 </style>
