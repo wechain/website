@@ -35,51 +35,45 @@
 </template>
 
 <script>
-  import storyblok from '../../mixins/storyblok'
-  export default {
-    mixins: [storyblok],
-    data() {
-      return {
-        dialog: false,
-        currentPhotoIndex: null,
-      }
-    },
-    computed: {
-      slug() {
-        return `galleries/${this.$route.params.gallery}`;
-      },
-    },
-    methods: {
-      setCarouselStart(index) {
-        this.currentPhotoIndex = index;
-        this.dialog = true;
-      }
+import storyblok from '../../mixins/storyblok';
+export default {
+  mixins: [storyblok],
+  data() {
+    return {
+      dialog: false,
+      currentPhotoIndex: null
+    };
+  },
+  methods: {
+    setCarouselStart(index) {
+      this.currentPhotoIndex = index;
+      this.dialog = true;
     }
   }
+};
 </script>
 
 <style lang="scss">
+.v-carousel {
+  height: 650px;
+  .v-jumbotron__image {
+    max-width: 100%;
+  }
+}
+
+.gallery-image {
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
   .v-carousel {
-    height: 650px;
-    .v-jumbotron__image {
-      max-width: 100%;
-    }
+    height: 480px;
   }
+}
 
-  .gallery-image {
-    cursor: pointer;
+@media (max-width: 420px) {
+  .v-carousel {
+    height: 250px;
   }
-
-
-  @media (max-width: 960px) {
-    .v-carousel {
-      height: 480px;
-    }
-  }
-
-  @media (max-width: 420px) {
-    .v-carousel {
-      height: 250px;
-    }
-  }
+}
 </style>

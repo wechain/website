@@ -11,21 +11,16 @@
 </template>
 
 <script>
-  import storyblok from '../mixins/storyblok'
-  import messages from '../assets/translations/gallery'
-  import VVGrid from '../components/Grid'
-  export default {
-    data() {
-      return {
-        slug: 'gallery',
-      }
-    },
-    mixins: [storyblok],
-    components: {
-      VVGrid
-    },
-    i18n: {
-      messages
-    }
+import storyblok from '../mixins/storyblok';
+import messages from '../assets/translations/gallery';
+import VVGrid from '../components/Grid';
+export default {
+  mixins: [storyblok],
+  components: {
+    VVGrid
+  },
+  i18n: {
+    messages
   }
+};
 </script>

@@ -86,36 +86,32 @@
 </template>
 
 <script>
-  import storyblok from '../mixins/storyblok'
-  import messages from '../assets/translations/team'
-  export default {
-    mixins: [storyblok],
-    data() {
-      return {
-        slug: 'partners',
-      }
-    },
-    i18n: {
-      messages
-    }
+import storyblok from '../mixins/storyblok';
+import messages from '../assets/translations/team';
+export default {
+  mixins: [storyblok],
+  i18n: {
+    messages
   }
+};
 </script>
 
 <style scoped>
-  h3, h4 {
-    width: 100%;
-    padding-bottom: 10px;
-  }
-  p {
-    font-size: 16px;
-  }
-  a {
-    width: 100%;
-    font-size: 16px;
-    text-decoration: none;
-    padding-bottom: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+h3,
+h4 {
+  width: 100%;
+  padding-bottom: 10px;
+}
+p {
+  font-size: 16px;
+}
+a {
+  width: 100%;
+  font-size: 16px;
+  text-decoration: none;
+  padding-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 </style>
