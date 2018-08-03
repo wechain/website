@@ -23,7 +23,7 @@
               {{currentEvent.location}}
             </p>
           </div>
-          <p class="text-xs-left">{{currentEvent.description}}</p>
+          <p class="text-xs-left" v-html="toHtml(currentEvent.description)"></p>
           <div class="card-buttons">
             <v-btn color="card-button secondary darken-2" dark v-for="action in currentEvent.actions"
                    :key="action.text"
@@ -39,14 +39,20 @@
 
 <script>
 import storyblok from '../../mixins/storyblok';
+import { markdown } from 'markdown';
 
 export default {
   mixins: [storyblok],
   computed: {
     currentEvent() {
       return this.story.content;
-    }
-  }
+    },
+  },
+  methods: {
+    toHtml(text) {
+      return markdown.toHTML(text);
+    },
+  },
 };
 </script>
 
