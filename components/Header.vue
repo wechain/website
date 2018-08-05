@@ -2,8 +2,7 @@
   <v-toolbar class="vv-toolbar" color="secondary darken-2" dark fixed app>
     <v-toolbar-side-icon class="hidden-md-and-up" @click.stop="$emit('toggleDrawer')"></v-toolbar-side-icon>
     <nuxt-link tag="v-toolbar-title" class="vv-logo" to="/">
-      <img src="~/assets/images/logo.png" alt="VueVixens Logo">
-      Vue Vixens
+      <img src="~/assets/images/logo.png" alt="VueVixens Logo"> Vue Vixens
     </nuxt-link>
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
@@ -16,27 +15,27 @@
     </v-toolbar-items>
     <v-toolbar-items>
       <v-menu offset-y left dark transition="slide-x-transition">
-        <v-btn
-          slot="activator"
-          light
-          depressed
-          color="primary">
+        <v-btn slot="activator" light depressed color="primary">
           <span class="flag-icon" :class="currentLocale.flag"></span>
           &nbsp;{{currentLocale.language}}
         </v-btn>
         <v-list class="secondary darken-2">
-          <v-list-tile
-            @click="changeLocale('en')">
+          <v-list-tile @click="changeLocale('en')">
             <v-list-tile-title>
               <span class="flag-icon flag-icon-gb"></span>
               {{ $t("languages.en") }}
             </v-list-tile-title>
           </v-list-tile>
-          <v-list-tile
-            @click="changeLocale('es')">
+          <v-list-tile @click="changeLocale('es')">
             <v-list-tile-title>
               <span class="flag-icon flag-icon-es"></span>
               {{ $t("languages.es") }}
+            </v-list-tile-title>
+          </v-list-tile>
+          <v-list-tile @click="changeLocale('pt')">
+            <v-list-tile-title>
+              <span class="flag-icon flag-icon-pt"></span>
+              {{ $t("languages.pt") }}
             </v-list-tile-title>
           </v-list-tile>
         </v-list>
@@ -61,7 +60,13 @@
               language: this.$t("languages.es"),
               flag: 'flag-icon-es'
             };
+          case 'pt':
+            return {
+              language: this.$t("languages.pt"),
+              flag: 'flag-icon-pt'
+            };
         }
+
       },
     },
     methods: {
@@ -76,18 +81,18 @@
 </script>
 
 <style scoped lang="scss">
-  .vv-logo {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    cursor: pointer;
-    img {
-      max-width: 40px;
-      margin-right: 10px;
-    }
+.vv-logo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  cursor: pointer;
+  img {
+    max-width: 40px;
+    margin-right: 10px;
   }
+}
 
-  .vv-toolbar {
-    z-index: 5;
-  }
+.vv-toolbar {
+  z-index: 5;
+}
 </style>

@@ -7,11 +7,12 @@ export default {
       team: 'Team',
       gallery: 'Gallery',
       library: 'Library',
-      shop: 'Shop',
+      shop: 'Shop'
     },
     languages: {
       en: 'English',
-      es: 'Español'
+      es: 'Español',
+      pt: 'Português'
     }
   },
   es: {
@@ -22,11 +23,28 @@ export default {
       team: 'Equipo',
       gallery: 'Galería',
       shop: 'Tienda',
-      library: 'Library',
+      library: 'Library'
     },
     languages: {
       en: 'English',
-      es: 'Español'
+      es: 'Español',
+      pt: 'Português'
+    }
+  },
+  pt: {
+    menu: {
+      about: 'Acerca de',
+      upcoming: 'Próximos',
+      sponsors: 'Sponsors',
+      team: 'Equipa',
+      gallery: 'Galeria',
+      shop: 'Loja',
+      library: 'Livraria'
+    },
+    languages: {
+      en: 'English',
+      es: 'Español',
+      pt: 'Português'
     }
   }
 }
