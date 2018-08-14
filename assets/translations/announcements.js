@@ -6,5 +6,9 @@ export default {
   es: {
     eventsTitle: 'Próximos Eventos',
     cta: 'See all events'
+  },
+  pt: {
+    eventsTitle: 'Próximos Eventos',
+    cta: 'Ver todos os eventos'
   }
-};
+}

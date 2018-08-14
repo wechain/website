@@ -2,10 +2,11 @@ export default {
   en: {
     heading: {
       title: 'Welcome to Vue Vixens!',
-      description: 'Vue Vixens are foxy people who identify as women and who want to learn Vue.js' +
-      ' to make websites and mobile apps',
+      description:
+        'Vue Vixens are foxy people who identify as women and who want to learn Vue.js' +
+        ' to make websites and mobile apps',
       workshops: 'Workshops',
-      patreon: 'Become a Patron',
+      patreon: 'Become a Patron'
     },
     eventsTitle: 'Upcoming Events',
     skulk: {
@@ -19,20 +20,22 @@ export default {
     request: {
       title: 'Request',
       content: 'Conference organizers, register to host a workshop.'
-    },
+    }
   },
   es: {
     heading: {
       title: 'Bienvenidx a Vue Vixens!',
-      description: 'Vue Vixens es gente "foxy" que se identifica como mujer y que quiere aprender Vue.js' +
-      ' para hacer websites y mobile apps',
+      description:
+        'Vue Vixens es gente "foxy" que se identifica como mujer y que quiere aprender Vue.js' +
+        ' para hacer websites y mobile apps',
       workshops: 'Workshops',
       patreon: 'Apoyanos como Patron'
     },
     eventsTitle: 'Próximos Eventos',
     skulk: {
       title: 'Sumate a un Skulk',
-      content: 'Deseas aprender Vue.js? Sumate a un Vue Vixen Skulk de manera gratuita!'
+      content:
+        'Deseas aprender Vue.js? Sumate a un Vue Vixen Skulk de manera gratuita!'
     },
     program: {
       title: 'El Programa',
@@ -40,7 +43,33 @@ export default {
     },
     request: {
       title: 'Solicitudes',
-      content: 'Organizadores de eventos y conferencias, registrarse para organizar un workshop.'
+      content:
+        'Organizadores de eventos y conferencias, registrarse para organizar un workshop.'
+    }
+  },
+  pt: {
+    heading: {
+      title: 'Bem vindo ao Vue Vixens!',
+      description:
+        'Vue Vixens são pessoas "foxy" que se identificam como mulher e querem aprender Vue.js' +
+        ' para fazer websites e aplicções para telémovel',
+      workshops: 'Workshops',
+      patreon: 'Apoia-nos no Patreon'
     },
+    eventsTitle: 'Próximos Eventos',
+    skulk: {
+      title: 'Junta-te a uma Skulk',
+      content:
+        'Queres aprender Vue.js? Junta-te a uma Skulk Vue Vixen de graça!'
+    },
+    program: {
+      title: 'O Programa',
+      content: 'Estudantes e mentores, aprendam mais sobre o nosso programa.'
+    },
+    request: {
+      title: 'Pedir',
+      content:
+        'Ogranizadores de enventos, registem-se para terem um workshop no vosso evento.'
+    }
   }
-};
+}
