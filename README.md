@@ -1,21 +1,15 @@
-# Vue Vixens
+# VueVixens Website
 
-> Workshops for Foxy People 🦊
+> Workshops for Foxy People 🦊 
 
-## Build Setup
+An awesome Nuxt SSR Website + Docker 🐳
 
-``` bash
-# install dependencies
-npm install
+## Docker Instructions
 
-# serve with hot reload at localhost:8080
-npm run dev
+Provided you have correctly installed Docker, Docker Machine & Docker-Compose clone this repo and read below!
 
-# build for production with minification
-npm run build --prod
 
-# build for production and view the bundle analyzer report
-npm run build --report
+## Build, Run and Have Fun! 💅
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+docker-compose build && docker-compose up -d
+```
