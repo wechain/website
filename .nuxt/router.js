@@ -3,16 +3,16 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _2846b22c = () => import('../pages/Team.vue' /* webpackChunkName: "pages/Team" */).then(m => m.default || m)
-const _a69c3ae0 = () => import('../pages/Request.vue' /* webpackChunkName: "pages/Request" */).then(m => m.default || m)
-const _571ca71b = () => import('../pages/Credits.vue' /* webpackChunkName: "pages/Credits" */).then(m => m.default || m)
-const _c460ea64 = () => import('../pages/About.vue' /* webpackChunkName: "pages/About" */).then(m => m.default || m)
-const _2fed645a = () => import('../pages/Gallery.vue' /* webpackChunkName: "pages/Gallery" */).then(m => m.default || m)
-const _43ce1ebc = () => import('../pages/Library.vue' /* webpackChunkName: "pages/Library" */).then(m => m.default || m)
-const _3b974ee8 = () => import('../pages/Sponsors.vue' /* webpackChunkName: "pages/Sponsors" */).then(m => m.default || m)
-const _287956c1 = () => import('../pages/galleries/_gallery.vue' /* webpackChunkName: "pages/galleries/_gallery" */).then(m => m.default || m)
-const _254f83b2 = () => import('../pages/events/_event.vue' /* webpackChunkName: "pages/events/_event" */).then(m => m.default || m)
-const _461545b3 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
+const _876030d8 = () => import('../pages/Team.vue' /* webpackChunkName: "pages/Team" */).then(m => m.default || m)
+const _6f6057b0 = () => import('../pages/Request.vue' /* webpackChunkName: "pages/Request" */).then(m => m.default || m)
+const _72ba98b3 = () => import('../pages/Credits.vue' /* webpackChunkName: "pages/Credits" */).then(m => m.default || m)
+const _ea25fb34 = () => import('../pages/About.vue' /* webpackChunkName: "pages/About" */).then(m => m.default || m)
+const _03a73f6b = () => import('../pages/Gallery.vue' /* webpackChunkName: "pages/Gallery" */).then(m => m.default || m)
+const _5f6c1054 = () => import('../pages/Library.vue' /* webpackChunkName: "pages/Library" */).then(m => m.default || m)
+const _d890df60 = () => import('../pages/Sponsors.vue' /* webpackChunkName: "pages/Sponsors" */).then(m => m.default || m)
+const _66e4f629 = () => import('../pages/galleries/_gallery.vue' /* webpackChunkName: "pages/galleries/_gallery" */).then(m => m.default || m)
+const _7da7e34a = () => import('../pages/events/_event.vue' /* webpackChunkName: "pages/events/_event" */).then(m => m.default || m)
+const _3332bd4b = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
 
 
 
@@ -74,52 +74,52 @@ export function createRouter () {
     routes: [
 		{
 			path: "/Team",
-			component: _2846b22c,
+			component: _876030d8,
 			name: "Team"
 		},
 		{
 			path: "/Request",
-			component: _a69c3ae0,
+			component: _6f6057b0,
 			name: "Request"
 		},
 		{
 			path: "/Credits",
-			component: _571ca71b,
+			component: _72ba98b3,
 			name: "Credits"
 		},
 		{
 			path: "/About",
-			component: _c460ea64,
+			component: _ea25fb34,
 			name: "About"
 		},
 		{
 			path: "/Gallery",
-			component: _2fed645a,
+			component: _03a73f6b,
 			name: "Gallery"
 		},
 		{
 			path: "/Library",
-			component: _43ce1ebc,
+			component: _5f6c1054,
 			name: "Library"
 		},
 		{
 			path: "/Sponsors",
-			component: _3b974ee8,
+			component: _d890df60,
 			name: "Sponsors"
 		},
 		{
 			path: "/galleries/:gallery?",
-			component: _287956c1,
+			component: _66e4f629,
 			name: "galleries-gallery"
 		},
 		{
 			path: "/events/:event?",
-			component: _254f83b2,
+			component: _7da7e34a,
 			name: "events-event"
 		},
 		{
 			path: "/",
-			component: _461545b3,
+			component: _3332bd4b,
 			name: "index"
 		}
     ],

@@ -23,7 +23,7 @@
               {{currentEvent.location}}
             </p>
           </div>
-          <p class="text-xs-left" v-html="toHtml(currentEvent.description)"></p>
+          <div class="text-xs-left" v-html="toHtml(currentEvent.description)"></div>
           <div class="card-buttons">
             <v-btn color="card-button secondary darken-2" dark v-for="action in currentEvent.actions"
                    :key="action.text"
