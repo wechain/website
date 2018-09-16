@@ -13,5 +13,9 @@ export default {
   pt: {
     title: 'Próximas Skulks',
     subtitle: `O que é uma skulk? Um grupo de raposas (foxes) é chamado Skulk. Aqui estão os nossos próximos eventos.`
+  },
+  pt_br: {
+    title: 'Próximas Skulks',
+    subtitle: `O que é uma skulk? Um grupo de raposas (foxes) é chamado Skulk. Aqui estão os nossos próximos eventos.`
   }
 }

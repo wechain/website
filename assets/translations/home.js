@@ -71,5 +71,30 @@ export default {
       content:
         'Ogranizadores de enventos, registem-se para terem um workshop no vosso evento.'
     }
+  },
+  pt_br: {
+    heading: {
+      title: 'Bem vindo ao Vue Vixens!',
+      description:
+        'Vue Vixens são pessoas "foxy" que se identificam como mulheres e querem aprender Vue.js' +
+        ' para fazer aplicações web e mobile',
+      workshops: 'Workshops',
+      patreon: 'Apoie-nos no Patreon'
+    },
+    eventsTitle: 'Próximos Eventos',
+    skulk: {
+      title: 'Junte-se a uma Skulk',
+      content:
+        'Quer aprender Vue.js? Junte-se a uma Skulk Vue Vixen de graça!'
+    },
+    program: {
+      title: 'O Programa',
+      content: 'Estudantes e mentores, aprendam mais sobre o nosso programa.'
+    },
+    request: {
+      title: 'Pedir um evento',
+      content:
+        'Organizadores de eventos, registrem-se para ter um workshop em seu evento.'
+    }
   }
 }

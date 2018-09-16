@@ -38,6 +38,12 @@
               {{ $t("languages.pt") }}
             </v-list-tile-title>
           </v-list-tile>
+          <v-list-tile @click="changeLocale('pt_br')">
+            <v-list-tile-title>
+              <span class="flag-icon flag-icon-br"></span>
+              {{ $t("languages.pt_br") }}
+            </v-list-tile-title>
+          </v-list-tile>
         </v-list>
       </v-menu>
     </v-toolbar-items>
@@ -64,6 +70,11 @@
             return {
               language: this.$t("languages.pt"),
               flag: 'flag-icon-pt'
+            };
+          case 'pt_br':
+            return {
+              language: this.$t("languages.pt_br"),
+              flag: 'flag-icon-br'
             };
         }
 

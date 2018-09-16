@@ -32,5 +32,16 @@ export default {
     artistLink: 'KaiXinFun',
     item2: `🦊 Este projeto foi inspirado por {ngGirls}, {djangoGirls}, e {railsBridge}. Iniciativas
                 incriveis, que valem bem a pena ver!`
+  },
+  pt_br: {
+    title: 'Créditos',
+    subtitle: `Somos gratas por muitos recursos que tivemos acesso tanto online como pessoalmente`,
+    item1: `🦊 As fotos deste site são do {unsplash}
+                por Joey Kyber, Westley Ferguson, Caleb Woods, Jeremy Vessey, Ray Hennessey, Climate KIC,
+                Dai KE, Hans Veth, Mikael Kristenson, Nathan Anderson. A imagem do Skulk foi criada por {artist}`,
+    unsplashLink: 'Unsplash',
+    artistLink: 'KaiXinFun',
+    item2: `🦊 Este projeto foi inspirado por {ngGirls}, {djangoGirls}, e {railsBridge}. Iniciativas
+                incriveis, que valem a pena conhecer!`
   }
 }
