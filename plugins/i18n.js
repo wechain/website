@@ -10,7 +10,8 @@ export default ({ app }) => {
     messages: {
       en: {},
       es: {},
-      pt: {}
+      pt: {},
+      pt_br: {}
     }
   })
 }

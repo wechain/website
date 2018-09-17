@@ -45,5 +45,16 @@ export default {
     li3:
       '🦊 Mentores são escolhidos dos speakers da conferência. Nós falamos com eles se nos deres uma lista!',
     button: 'Pede uma Skulk'
+  },
+  pt_br: {
+    title: 'Peça um workshop para a sua Conferência, Meetup, Grupo ou Evento',
+    subtitle: `Como funciona?`,
+    content: `Se está organizando um evento, considere adicionar uma oferta de diversidade oferecendo um workshop Vue Vixens a pessoas que se identificam como mulheres. Um modelo que funciona é ter workshops pagos no dia antes da conferência e oferecer um workshop de Vue Vixens no dia depois do evento. Os workshops duram o dia todo, grátis para quem se inscreve e com muito pouco custo para a organização.
+    Organizadores de conferências trabalham conosco para organizar a logistica que inclui:`,
+    li1: '🦊 Um local de trabalho com acesso á internet.',
+    li2: '🦊 Almoço para os partipantes que é oferecido pela conferência.',
+    li3:
+      '🦊 Mentores são escolhidos dentre os speakers da conferência. Nós falamos com eles se nos der uma lista!',
+    button: 'Pede uma Skulk'
   }
 }

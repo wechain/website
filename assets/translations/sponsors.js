@@ -12,5 +12,9 @@ export default {
   pt: {
     title: 'Os nossos Sponsors',
     subtitle: `Estamos eternamente gratos aos nossos sponsor! Aqui podes encontrar a lista de membros da comunidade envolvidos com o nosso projecto.`
+  },
+  pt_br: {
+    title: 'Os nossos Sponsors',
+    subtitle: `Estamos eternamente gratas aos nossos patrocinadores! Aqui pode encontrar a lista de membros da comunidade envolvidos com o nosso projeto.`
   }
 }

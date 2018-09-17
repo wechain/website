@@ -13,5 +13,10 @@ export default {
     team: 'A nossa equipa',
     board: `Conselho de Administração`,
     regional: 'Lideres Regionais'
+  },
+  pt_br: {
+    team: 'A nossa equipe',
+    board: `Conselho de Administração`,
+    regional: 'Lideres Regionais'
   }
 }

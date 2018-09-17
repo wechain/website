@@ -10,5 +10,9 @@ export default {
   pt: {
     eventsTitle: 'Próximos Eventos',
     cta: 'Ver todos os eventos'
+  },
+  pt_br: {
+    eventsTitle: 'Próximos Eventos',
+    cta: 'Ver todos os eventos'
   }
 }
