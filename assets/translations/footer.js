@@ -13,5 +13,10 @@ export default {
     progress: 'Um projeto apoiado por Progress',
     request: 'Pedir uma Skulk',
     credits: 'Créditos'
+  },
+  pt_br: {
+    progress: 'Um projeto apoiado por Progress',
+    request: 'Pedir uma Skulk',
+    credits: 'Créditos'
   }
 }

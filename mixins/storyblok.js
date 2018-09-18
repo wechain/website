@@ -1,30 +1,34 @@
+const formatPath = (path, locale) => {
+  const slug = path === '/' ? 'upcoming' : path;
+  return locale && locale === 'en'
+    ? `cdn/stories/${slug}`
+    : `cdn/stories/${locale}/${slug}`;
+};
+
 export default {
   data() {
     return {
       story: {},
-      loading: false
+      loading: false,
     };
   },
+  i18n: {},
   methods: {
     async loadStory(locale) {
-      const slug = this.$route.path === '/' ? 'upcoming' : this.$route.path;
-      const path =
-        locale === 'en'
-          ? `cdn/stories/${slug}`
-          : `cdn/stories/${locale}/${slug}`;
+      const path = formatPath(this.$route.path, locale);
       const response = await this.$storyapi.get(path, { version: 'published' });
       this.story = response.data.story;
     },
     listener(locale) {
       this.loadStory(locale);
-    }
+    },
   },
   async asyncData(context) {
     let version =
       context.query._storyblok || context.isDev ? 'draft' : 'published';
-    const path = context.route.path === '/' ? 'upcoming' : context.route.path;
-    const response = await context.app.$storyapi.get(`cdn/stories/${path}`, {
-      version
+    const path = formatPath(context.route.path, context.app.i18n.locale);
+    const response = await context.app.$storyapi.get(path, {
+      version,
     });
     return response.data;
   },
@@ -40,5 +44,5 @@ export default {
   },
   beforeDestroy() {
     this.$bus.$off('changeLocale', this.listener);
-  }
+  },
 };

@@ -10,5 +10,9 @@ export default {
   pt: {
     title: 'Galería',
     subtitle: `Aqui encontrarás imagens dos nossos skulks`
+  },
+  pt_br: {
+    title: 'Galeria',
+    subtitle: `Aqui encontrará imagens dos nossos skulks`
   }
 }

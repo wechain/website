@@ -157,5 +157,35 @@ export default {
         paragraph5: 'Obrigada pela compreênsão! 🦊'
       }
     }
+  },
+  pt_br: {
+    vixens: {
+      title: 'Sobre Vue Vixens',
+      content: `{medium} é uma iniciativa fundada por {jen}, Developer Advocate na
+              {progress}, que cria e hospeda workshops com o intuito de ensinar Vue.js para pessoas sub-representadas, de uma forma legal e divertida.
+              Ele é baseado no modelo de sucesso criado por Shmuela Jacobs na comunidade Angular ({ngGirls}) que por sua vez, foi inspirado pelas iniciativas Rails Bridge e Django Girls. 
+              O formato envolve laboratórios de códigos auto-orientados feitos em formato de workshop em grupos com orientação de conferencistas e palestrantes que se oferecem para ajudar. O objetivo do programa é familiarizar mulheres e todos que se identificam como tal com Vue.js de uma forma inclusiva e com o suporte necessário. Nós também ajudamos conferências a organizar iniciativas de diversidade, como a oferta de ingressos gratuitos para conferências, e estamos construindo um fundo para ajudar a cobrir os custos da conferência dos participantes.
+              Perguntas? Entre em contato pelo email  {mail}`,
+      mediumLink: 'Vue Vixens',
+      jenLink: 'Jen Looper',
+      progressLink: 'Progress',
+      ngGirlsLink: 'ng-girls.org',
+      mailLink: 'info@vuevixens.org'
+    },
+    activities: {
+      title: 'Sobre as nossas Atividades',
+      content: {
+        paragraph1: `O que você pode esperar de um evento das Vue Vixens? Bom, como participante, talvez nova na área de desenvolvimento frontend, você terá a oportunidade de aprender sobre Vue.js, um framework legal feito para construir aplicações web e também mobile. Durante um café da manhã, um almoço, ou um dia completo, você irá trabalhar com um(a) mentor(a) em grupos pequenos em um workshop. 
+        Você irá construir uma aplicação web e uma aplicação mobile, que te ensinarão sobre o framework e a programar em JavaScript. 
+        Você também terá a chance de conhecer e trabalhar com pessoas como você e estar frente a frente com pessoas muito experientes - nossas(os) mentoras(os) muitas vezes são palestrantes das conferências que você participa.`,
+        paragraph2: `{mentorsNote}: Se te estás a juntar como mentor, primeiro, muito obrigado! Por tua causa podemos oferecer workshops gratuitos a novos programadores num ambiente solidário. O teu trabalho é ficares o dia com os teus "alunos" e ajudá-los a ultrapassar qualquer problema e também responder a qualquer questão que apareça. Ès incrivel!
+        Para ser claro, qualquer pessoa pode ser mentor no Vue Vixens e agradeçemos imenso a tua ajuda!`,
+        mentorsNote: `Nota para mentores`,
+        paragraph3: `{studentsNote}: em dúvida se você se encaixaria em um skulk das Vue Vixens? Se você é uma pessoa desenvolvedora em Vue.js que se identifica como mulher, você é bem vinda. O foco do grupo é na educação e promoção de mulheres desenvolvedoras, e pessoas que se identificam como tal. Pessoas trans são bem vindas. A fundadora das Vue Vixens, Jen Looper, foi estudante da Wellesley College (turma de '92) e usa o critério de admissão da faculdade como base. Parafraseando o estatuto de admissão deles:`,
+        studentsNote: 'Nota para estudantes',
+        paragraph4: `"Nós admitiremos qualquer pessoa que viva como uma mulher e consistentemente se identifique como uma mulher; portanto, candidatos designados do gênero masculino ao nascer que se identificam como mulheres são elegíveis. Também são bem vindas as pessoas que foram designadas do gênero feminino ao nascer e que sentem que pertencem em nossa comunidade de mulheres. Nós procuramos prover estudantes com um ambiente de aprendizado unicamente empoderador—um ambiente designado especificamente para preparar mulheres para prosperar em um mundo complexo."`,
+        paragraph5: 'Obrigada pela compreensão! 🦊'
+      }
+    }
   }
 }

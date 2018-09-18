@@ -5,8 +5,8 @@
         <img class="vv-logo" src="~/assets/images/logo.png" alt="VueVixens logo">
       </v-flex>
       <v-flex xs12 v-if="!!story.content">
-        <template v-for="element in story.content.body">
-          <h2 class="vv-subheading font-lato text-xs-center" :key="element.title">
+        <template v-for="(element, index) in story.content.body">
+          <h2 class="vv-subheading font-lato text-xs-center" :key="element.title + index">
             {{ element.title }}
           </h2>
           <div class="about-content" v-html="toHtml(element.content)" :key="element.title"></div>
